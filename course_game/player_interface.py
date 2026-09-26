@@ -57,6 +57,8 @@ class GardenDoorEpisode:
         _check_player(player_id)
         if self.outcome()["status"] == "terminal":
             return {"accepted": False, "text": "The episode is over.", "observation": self.observe(player_id)}
+        if not isinstance(action, str):
+            action = repr(action)  # A malformed model reply is an invalid action, not a crash.
         action = " ".join(action.lower().split())
         self.steps += 1
         accepted = action in self.legal_actions(player_id)

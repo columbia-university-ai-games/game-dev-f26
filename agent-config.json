@@ -117,6 +117,7 @@
     "limits": {
       "max_steps": 20
     },
-    "evaluation_cases": "tests/test_player_interface.py"
+    "evaluation_cases": "tests/test_player_interface.py",
+    "runner_constraint": "The Session 4 runner hands the player only observe, legal_actions and step; the GardenDoorEpisode object (and its _world) stays with the runner. Python cannot enforce this; a runner test must."
   }
 }

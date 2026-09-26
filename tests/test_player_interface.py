@@ -37,6 +37,29 @@ class PlayerInterfaceTests(unittest.TestCase):
         self.assertEqual(episode.outcome()["invalid_actions"], 1)
         self.assertEqual(episode.trace, [{"step": 1, "action": "north", "accepted": False}])
 
+    def test_refused_actions_change_no_state(self):
+        cases = (
+            ("take key before the key is seen", [], "take key"),
+            ("unlock door without the key", ["east", "west"], "unlock door"),
+            ("unlock door once it is open", ["east", "take key", "west", "unlock door"], "unlock door"),
+        )
+        for name, setup, action in cases:
+            with self.subTest(name):
+                episode = GardenDoorEpisode()
+                for earlier in setup:
+                    episode.step(PLAYER_ID, earlier)
+                before = episode.observe(PLAYER_ID)
+                self.assertFalse(episode.step(PLAYER_ID, action)["accepted"])
+                self.assertEqual(episode.observe(PLAYER_ID), before)
+                self.assertEqual(episode.outcome()["invalid_actions"], 1)
+
+    def test_malformed_action_is_counted_not_raised(self):
+        episode = GardenDoorEpisode()
+        for action in (None, {"action": "east"}, 42):
+            self.assertFalse(episode.step(PLAYER_ID, action)["accepted"])
+        self.assertEqual(episode.outcome()["invalid_actions"], 3)
+        self.assertEqual(episode.observe(PLAYER_ID)["room"], "You are in the hall.")
+
     def test_step_limit_ends_the_episode(self):
         episode = GardenDoorEpisode(max_steps=3)
         for _ in range(3):
