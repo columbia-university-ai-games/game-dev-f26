@@ -50,7 +50,73 @@
   "fallback": "The game CLI shows deterministic state on failure. Setup Verification fails on live errors; it never substitutes a fixture.",
   "limitations": [
     "Valid JSON and fact IDs do not prove that the narration is true.",
-    "Stateless narrator only; player agent, episode runner, reusable skill and independent reviewer are Session 3 to 5 exercises.",
+    "Stateless narrator only. The Session 3 examples (player interface, rule-change skill, rules reviewer) exist; the player agent, episode runner and baseline are Session 4 and 5 exercises.",
     "Live model, institutional credits and deployed service are not verified by offline tests."
-  ]
+  ],
+  "agent_team": [
+    {
+      "role": "Implementation agent",
+      "native_artifact": "AGENTS.md",
+      "purpose": "Build and change the game under the student's direction.",
+      "context": [
+        "AGENTS.md",
+        "docs/rule-source-map.md",
+        "course_game/",
+        "tests/"
+      ],
+      "tools_and_permissions": "The coding assistant's repository read/write and test commands; no credentials, no merge, no gate approval.",
+      "outputs": "A branch, passing tests and a change summary in the rule-change skill's format.",
+      "handoff": "Summary and diff to the rules reviewer; the student opens the PR and links the Asana task.",
+      "human_approval": "The student merges."
+    },
+    {
+      "role": "Reusable skill: rule-change",
+      "native_artifact": ".claude/skills/rule-change/SKILL.md",
+      "purpose": "One procedure for every rule change: map row, failing test, engine change, boundary check, summary.",
+      "context": [
+        "docs/rule-source-map.md",
+        "course_game/player_interface.py"
+      ],
+      "tools_and_permissions": "Runs inside the implementation agent with its permissions.",
+      "outputs": "Updated map row, test and summary.",
+      "handoff": "The summary is the reviewer's input.",
+      "human_approval": "The student accepts or rejects the summary's assumptions."
+    },
+    {
+      "role": "Independent review task: rules-reviewer",
+      "native_artifact": ".claude/agents/rules-reviewer.md",
+      "purpose": "Check evidence, agreement of engine, test and map, test coverage and the playing agent's boundary.",
+      "context": [
+        "the change summary and diff",
+        "docs/rule-source-map.md",
+        "course_game/",
+        "tests/"
+      ],
+      "tools_and_permissions": "Read, Grep, Glob only; a fresh context that did not write the change.",
+      "outputs": "Findings as [blocking | should fix | note] file:line lines, or \"No findings\".",
+      "handoff": "Findings go to the student, who decides; blocking findings return to the implementation agent.",
+      "human_approval": "The student decides every finding; the reviewer cannot approve or merge."
+    }
+  ],
+  "playing_agent_interface": {
+    "native_artifact": "course_game/player_interface.py",
+    "operations": [
+      "reset(seed)",
+      "observe(player_id)",
+      "legal_actions(player_id)",
+      "step(player_id, action)",
+      "outcome()"
+    ],
+    "sees": "observe() and legal_actions() only",
+    "never_sees": [
+      "the World object",
+      "repository files",
+      "docs/rule-source-map.md",
+      "credentials"
+    ],
+    "limits": {
+      "max_steps": 20
+    },
+    "evaluation_cases": "tests/test_player_interface.py"
+  }
 }
