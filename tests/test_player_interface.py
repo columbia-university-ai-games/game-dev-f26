@@ -59,6 +59,7 @@ class PlayerInterfaceTests(unittest.TestCase):
             self.assertFalse(episode.step(PLAYER_ID, action)["accepted"])
         self.assertEqual(episode.outcome()["invalid_actions"], 3)
         self.assertEqual(episode.observe(PLAYER_ID)["room"], "You are in the hall.")
+        self.assertEqual(episode.trace[0]["action"], "<not text: nonetype>")
 
     def test_step_limit_ends_the_episode(self):
         episode = GardenDoorEpisode(max_steps=3)
@@ -66,7 +67,7 @@ class PlayerInterfaceTests(unittest.TestCase):
             episode.step(PLAYER_ID, "look")
         self.assertEqual(episode.outcome()["reason"], "step limit")
         self.assertFalse(episode.step(PLAYER_ID, "east")["accepted"])
-        self.assertEqual(episode.steps, 3)
+        self.assertEqual((episode.steps, episode.invalid_actions, len(episode.trace)), (3, 0, 3))
 
     def test_no_actions_after_winning(self):
         episode = GardenDoorEpisode()

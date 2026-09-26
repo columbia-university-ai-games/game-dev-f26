@@ -100,14 +100,18 @@
   ],
   "playing_agent_interface": {
     "native_artifact": "course_game/player_interface.py",
-    "operations": [
-      "reset(seed)",
-      "observe(player_id)",
-      "legal_actions(player_id)",
-      "step(player_id, action)",
-      "outcome()"
-    ],
-    "sees": "observe() and legal_actions() only",
+    "operations": {
+      "player": [
+        "observe(player_id)",
+        "legal_actions(player_id)",
+        "step(player_id, action)"
+      ],
+      "runner": [
+        "reset(seed)",
+        "outcome()"
+      ]
+    },
+    "sees": "the results of observe(), legal_actions() and step() only",
     "never_sees": [
       "the World object",
       "repository files",
@@ -118,6 +122,6 @@
       "max_steps": 20
     },
     "evaluation_cases": "tests/test_player_interface.py",
-    "runner_constraint": "The Session 4 runner hands the player only observe, legal_actions and step; the GardenDoorEpisode object (and its _world) stays with the runner. Python cannot enforce this; a runner test must."
+    "runner_constraint": "The Session 4 runner calls reset and outcome and holds the GardenDoorEpisode object (and its _world); the player receives only observe, legal_actions and step. Python cannot enforce this; a runner test must. Listed as assumed in docs/rule-source-map.md."
   }
 }

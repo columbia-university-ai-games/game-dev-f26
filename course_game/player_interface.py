@@ -53,12 +53,13 @@ class GardenDoorEpisode:
                 actions.append("take key")
         return actions
 
-    def step(self, player_id: str, action: str) -> dict[str, object]:
+    def step(self, player_id: str, action: object) -> dict[str, object]:
         _check_player(player_id)
         if self.outcome()["status"] == "terminal":
             return {"accepted": False, "text": "The episode is over.", "observation": self.observe(player_id)}
         if not isinstance(action, str):
-            action = repr(action)  # A malformed model reply is an invalid action, not a crash.
+            # A malformed model reply is an invalid action, not a crash.
+            action = f"<not text: {type(action).__name__}>"
         action = " ".join(action.lower().split())
         self.steps += 1
         accepted = action in self.legal_actions(player_id)

@@ -1,8 +1,9 @@
 # The Garden Door: rule and source map
 
 A worked example of the scope record's rule and source map, for the starter
-game. The Garden Door is original to this course, so every claim can carry
-the strongest label, `code`, with a file and line. Your classic will mix
+game. The Garden Door is original to this course, so every rule of the game
+carries the strongest label, `code`, with a file and line; one choice about
+the playing agent is still `assumed`. Your classic will mix
 `code`, `manual`, `observed` and `assumed`; an `assumed` line tells you and
 your agents what still needs checking.
 
@@ -35,14 +36,16 @@ the command line:
 | `unlock door` | in the hall, holding the key; the engine does not check whether the door is already open | `door_open` true | `code`: lines 45 to 49 |
 | `north` | in the hall, door open | `room` to `garden`; `won` true | `code`: lines 50 to 54 |
 
-Any other command changes nothing (`code`: lines 55 to 56).
+Any other command changes nothing (`code`: lines 55 to 56). After winning,
+every command except `look` is answered "The game is complete" and changes
+nothing (`code`: lines 35 to 36).
 
 ## Outcomes
 
 | Outcome | Condition | Evidence |
 | --- | --- | --- |
-| Win, score 1 | `won` becomes true | `code`: `course_game/world.py`, lines 53 to 54; `course_game/player_interface.py`, lines 74 to 75 |
-| Step limit, score 0 | 20 steps without winning | `code`: `course_game/player_interface.py`, line 21 (the default) and lines 76 to 77; a course choice, not a rule of the game |
+| Win, score 1 | `won` becomes true | `code`: `course_game/world.py`, lines 53 to 54; `course_game/player_interface.py`, lines 75 to 76 |
+| Step limit, score 0 | 20 steps without winning | `code`: `course_game/player_interface.py`, line 21 (the default) and lines 77 to 78; a course choice, not a rule of the game |
 
 ## Choices made for the playing agent
 
@@ -52,11 +55,11 @@ the interface code. Record yours the same way.
 | Choice | Evidence |
 | --- | --- |
 | `legal_actions` lists only actions that change state now, plus `look`. The engine accepts `unlock door` without the key and answers "You need the brass key", and accepts it again once the door is open; the agent gets neither in its list, and a generic refusal if it tries. A parser game such as Zork may be better served by the whole verb list and the game's own refusals; say which you chose and why | `code`: `course_game/player_interface.py`, lines 38 to 54 |
-| `take key` is listed only while the key is visible. Listing it in the hall would reveal the key before the player has seen it | `code`: lines 50 to 53 |
-| After winning, nothing is legal, `look` included | `code`: lines 41 to 42 |
-| During an episode, a refused action counts as a step and as an invalid action and never changes state. A reply that is not text counts the same way | `code`: lines 60 to 69 |
-| After the episode ends, every action is refused and nothing is counted | `code`: lines 58 to 59 |
-| The player receives the five operations, never the episode object; `episode._world` is reachable from Python, so the Session 4 runner must hand the player only `observe`, `legal_actions` and `step` | `assumed` until the runner exists and a test checks it |
+| `take key` is listed only while the key is visible. Listing it in the hall would reveal the key before the player has seen it | `code`: `course_game/player_interface.py`, lines 50 to 53 |
+| After winning, nothing is legal, `look` included | `code`: `course_game/player_interface.py`, lines 41 to 42 |
+| During an episode, a refused action counts as a step and as an invalid action and never changes state. A reply that is not text counts the same way | `code`: `course_game/player_interface.py`, lines 60 to 70 |
+| After the episode ends, every action is refused and nothing is counted | `code`: `course_game/player_interface.py`, lines 58 to 59 |
+| The player calls three operations: `observe`, `legal_actions` and `step`. The runner calls `reset` and `outcome` and keeps the episode object; `episode._world` is reachable from Python, so the runner, not the player, must hold it | `assumed` until the runner exists and a test checks it |
 
 ## Acceptance trace
 
@@ -67,5 +70,8 @@ invalid actions. `tests/test_player_interface.py` runs this trace.
 
 ## Open questions
 
-None for this game. For yours, list each question the evidence could not
-answer, and mark the rule `assumed` until it can.
+- Does the Session 4 runner give the player only `observe`, `legal_actions`
+  and `step`? `assumed` until the runner exists and a test checks it.
+
+For your game, list each question the evidence could not answer, and mark
+the rule `assumed` until it can.
