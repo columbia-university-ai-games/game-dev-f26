@@ -28,7 +28,13 @@ path; other platforms require instructor permission. This original demonstration
 - The midterm reconstructs a classic and includes an agent that plays it.
   Infocom is a sample set; other classic titles and genres are encouraged.
   Keep development tools separate from the player's observation/action
-  interface. The starter narrator is not yet a player or episode runner.
+  interface (`course_game/player_interface.py`). The starter narrator is
+  not a player; the episode runner and baseline come in Sessions 4 and 5.
+- To change a rule, legal action, observation or outcome, follow
+  `.claude/skills/rule-change/SKILL.md`: map row in
+  `docs/rule-source-map.md`, failing test first, then the engine. Hand the
+  summary to the independent reviewer (`.claude/agents/rules-reviewer.md`);
+  never review or approve your own change.
 - Never put secrets or personal playtester data in code, prompts, task text,
   recordings or reports. Model settings and artifact references belong in
   `agent-config.json`; runtime model identifiers belong in evaluation reports.
