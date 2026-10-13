@@ -4,8 +4,10 @@ Principle: perception
 
 ## Prediction (student writes before building)
 
-TODO: Describe one design change, the player behavior you predict, and what
-observation would make you question that prediction.
+Change: walls break. The first hit cracks a wall (it turns red) and the second
+hit destroys it. I predict this will make the game more fun and harder,
+because breaking a wall can remove the only route to the exit, and then the
+player has to reset. That makes each break a decision with a risk.
 
 ## Implementation
 
@@ -44,20 +46,46 @@ mainly rejects exits that no slide line can reach.
 
 ## Playtest observations
 
-TODO: Record anonymous player labels, board, version and order played, hints
-requested, restarts, completion, and one revealing action or remark. Separate
-observations from interpretations. No names, emails, or other personal data.
+- Breakable walls seemed to make complex levels with the exit in the middle
+  of the board much harder.
+- When the exit was flush against the edge of the board, the game was easier,
+  because the player could break all the walls in the way.
+- TODO: player labels (Player A, B…), which boards were played and in what
+  order, hints, resets, and completion.
 
 ## Interpretation and revision (student writes)
 
-TODO: Compare the evidence with the prediction. Mention prior familiarity,
-practice effects, sample size, or other limits. Describe the revision made or
-one next test. A single player's response supports a question, not a general claim.
+_Drafted by Claude from the student's prediction and playtest notes, at the
+student's request; student to review and edit._
+
+The prediction was only partly supported. It was harder when the exit was in
+the middle of the board. Out there, walls are the only places a slide can
+stop, so breaking one can remove a stopping point the route needed, which is
+the risk I predicted. When the exit was against the edge, the border (which
+never breaks) still gives a reliable place to stop, so breaking walls just
+clears a straight path. Breakable walls there removed difficulty instead of
+adding it. So whether the change makes the game harder depends on where the
+exit is, not on breaking alone.
+
+Limits: this comes from a small number of classmates who already knew the
+original game and may have seen some boards before. It suggests a question
+rather than a general claim.
+
+Next revision: add a limit on breaks per board (for example, two, shown on
+screen), so edge-exit boards can't be solved by smashing everything. Then
+compare a mid-board exit and an edge exit with new players, to see whether the
+limit makes the edge board challenging again without making the mid-board one
+frustrating.
 
 ## AI assistance and human decisions (student writes)
 
-TODO: State what Codex generated, what you checked, and one design decision you
-retained or changed. Include any remaining known issues.
+I decided which idea to implement: breakable walls that crack red on the
+first hit and break on the second. I used AI (Claude Code) to make the change
+and to confirm it worked without breaking anything else, through tests, a
+browser check, and a separate code review. I wrote this report myself, except
+for the interpretation section above, which Claude drafted from my notes.
+Remaining known issue: the cracked red is close to the player's colour, and I
+haven't decided whether to change it.
 
 ## Independent review
 
@@ -71,10 +99,9 @@ Issues found and resolution:
 - README described the old rules. Updated.
 - Missing tests (exit before wall, adjacent-wall push, solver cap). Added.
 - Not changed: cracked walls stay red as the student specified, although the
-  reviewer noted red is close to the player's coral token. TODO (student):
-  decide whether to keep red after playtesting.
+  reviewer noted red is close to the player's coral token. Kept for now;
+  listed as a known issue above.
 
 Checks repeated after fixes: `check` valid, `test` 13 pass / 0 fail, headless
 Chrome walkthrough (crack, break, undo, hint, reset, win, 375px width) with no
-console errors. Human play evidence is separate from this review and is still
-TODO above. The student and instructor retain approval decisions.
+console errors. Human play evidence is separate from this review. The student and instructor retain approval decisions.
