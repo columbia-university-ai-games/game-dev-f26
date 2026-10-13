@@ -34,6 +34,7 @@ Checks run by Claude Code (2026-10-12):
 Headless Chrome on puzzle 1: crack, break, slide, undo ×2, hint, reset, and a
 solver-route win all behaved as specified; no console errors; no horizontal
 scroll at 375px width. Board codes still use only `S E # .`.
+Student checked the game on a real phone (2026-10-13) and reported it works.
 
 Solver-measured effect on boards (shortest route, reference → variation):
 teaching boards 1–3 unchanged (3, 5, 7); board 4 "A useful detour" 9 → 7.
