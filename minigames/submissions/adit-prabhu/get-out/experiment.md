@@ -50,8 +50,8 @@ mainly rejects exits that no slide line can reach.
   of the board much harder.
 - When the exit was flush against the edge of the board, the game was easier,
   because the player could break all the walls in the way.
-- TODO: player labels (Player A, B…), which boards were played and in what
-  order, hints, resets, and completion.
+- Player A (one classmate) played all four built-in puzzles of this
+  variation. They requested no hints, used resets, and finished every puzzle.
 
 ## Interpretation and revision (student writes)
 
@@ -67,7 +67,7 @@ clears a straight path. Breakable walls there removed difficulty instead of
 adding it. So whether the change makes the game harder depends on where the
 exit is, not on breaking alone.
 
-Limits: this comes from a small number of classmates who already knew the
+Limits: this comes from a single player (Player A) who already knew the
 original game and may have seen some boards before. It suggests a question
 rather than a general claim.
 
