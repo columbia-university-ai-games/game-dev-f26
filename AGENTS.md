@@ -45,8 +45,9 @@ For this exercise, read `minigames/STUDENT-GUIDE.md` and use the repository skil
 `.agents/skills/minigame-variation/SKILL.md`. Student changes belong only in
 `minigames/submissions/<lowercase-github-login>/get-out/`; the reference and
 shared tooling are instructor-owned. Use the scaffold, keep one branch/PR per
-student, and stage that folder explicitly. Students write their prediction,
-interpretation, and AI disclosure. Record observed play only; unfinished human
-playtests remain TODOs in a draft. Tests of game rules and human experience
+student, and stage that folder explicitly. Students supply their design decisions,
+expected and alternative playtest outcomes, and interpretation directly in the
+PR description or a labeled comment. No AI-use disclosure is required for this
+lab. Clearly distinguish planned tests and predictions from actual observations. Tests of game rules and human experience
 provide different evidence. The Atlas contribution retains its own repository
 instructions and October 18 deadline.
