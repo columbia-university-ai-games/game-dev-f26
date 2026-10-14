@@ -1,0 +1,34 @@
+/* Fog has a dotted texture; walls keep the reference's diagonal stripes. */
+.cell.fog,.fog-key {
+  background-color:#111e2a;
+  background-image:radial-gradient(circle,#536270 1px,transparent 1px);
+  background-size:12px 12px;
+  border-color:#263542;
+}
+.cell.fog::after {
+  content:'?';
+  color:#93a1af;
+  font-size:clamp(11px,2.4vw,19px);
+  font-weight:500;
+}
+.fog-instructions {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+  margin:0 0 18px;
+}
+.exploration {
+  padding:10px 12px;
+  margin:12px 0;
+  background:#e9eddf;
+  border-left:3px solid var(--green);
+  border-radius:0 5px 5px 0;
+  font-size:12px;
+  line-height:1.6;
+  color:var(--green);
+}
+.player {z-index:1;}
+@media(max-width:420px) {
+  .legend {gap:10px;}
+  .play-actions button {padding:10px 12px;}
+}
