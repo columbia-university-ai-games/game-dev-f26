@@ -1,0 +1,42 @@
+.cell.visited::after {
+  content: "";
+  position: absolute;
+  right: 9%;
+  bottom: 9%;
+  width: 18%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #c88d28;
+  box-shadow: 0 0 0 2px #fffdf7;
+  z-index: 1;
+}
+
+.visited-key {
+  background: #c88d28;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #fffdf7;
+}
+
+.exploration-summary {
+  margin: -5px 0 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .masthead {
+    flex-wrap: wrap;
+  }
+
+  .workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .play-panel,
+  .side-card,
+  .board {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
