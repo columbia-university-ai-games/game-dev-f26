@@ -58,8 +58,11 @@ that specific conflict; continue unaffected inspection rather than deleting work
   If browser tools are unavailable, identify the remaining manual checks.
 - Show the playable file/preview to the student. Invite another peer playtest.
   Record actual checks and student-supplied observations in `experiment.md`.
-  Preserve their prediction, interpretation, and AI disclosure in their words;
-  ask for missing experience evidence only when needed, and leave TODOs in drafts.
+  Preserve their design decisions and interpretation in their words. Ask only
+  for missing design input. Record expected and alternative playtest outcomes,
+  what each would mean, and a next decision. Label plans/predictions separately
+  from observations; an unrun playtest can be described honestly as a plan.
+  No AI-use disclosure is required for this lab.
 - Update the manifest title/principle to match the change. Generate the gallery
   with `python3 scripts/minigames.py gallery` when useful; leave `build/` ignored.
   Do not make running commands or editing metadata a separate student task.
@@ -76,10 +79,16 @@ Stage only that folder, commit, and push to a verified class remote if writable,
 or the student's existing fork. Use `gh pr list` to find an existing PR for the
 branch before creating one. Open/update a draft against
 `columbia-university-ai-games/game-dev-f26` main, using the actual pushed head
-and `experiment.md` as a body source. If access prevents pushing and no fork is
+and the minigame PR template. Put **Design and playtesting** directly in the
+PR description: decisions and rationale, expected and alternative outcomes,
+playtest plan/actual observations, and the next design decision. Reuse the
+student's notes; linking to experiment.md alone is insufficient. A clearly
+labeled PR comment is also acceptable when updating an existing PR. Do not
+invent reflections or ask for an AI-use disclosure. If access prevents pushing and no fork is
 available, keep the local commit and explain the specific access blocker.
 
 Drafts may contain TODOs. Before ready-for-review, complete the student-supplied
 report and run `python3 scripts/minigames.py check --owner <login> --ready`.
-Instructor approval controls merging. No submission is due tonight; the Atlas
-October 18 contribution follows its own repository contract.
+Instructor approval controls merging. Follow CourseWorks for assignment
+submission requirements and deadlines. The Atlas October 18 contribution
+follows its own repository contract.

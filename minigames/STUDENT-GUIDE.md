@@ -44,15 +44,24 @@ interpretation; Codex can help record your words and the checks it ran.
 When you are ready, tell Codex:
 
 > Review my variation and prepare a draft pull request to the class repository.
-> Include only my game folder. Record what we tested and leave missing human
-> observations unfinished.
+> Include only my game folder. Put my design decisions, possible playtest
+> outcomes, what I would observe, and what I would change next directly in the
+> PR description. Separate predictions from anything we actually observed.
 
 Codex checks the changes, commits your folder, pushes your branch to the class
 repo or your existing fork, and opens or updates one draft PR. The instructor
 reviews and merges it. Your game appears in the shared gallery after merging.
 No student edits a shared gallery index.
 
-**No new submission is due tonight.** The Motivation Atlas minigame remains due
+In the PR description or a labeled **Design and playtesting** comment, explain
+what you changed and why, what you expect a player to do, a different possible
+outcome, and what you would keep or change depending on the result. Describe
+what you will observe; label actual playtest observations when you have them.
+A few specific sentences or bullets are enough. Codex can organize your words.
+No AI-use disclosure is required for this lab.
+
+Follow **CourseWorks** for submission requirements and deadlines. The Motivation
+Atlas minigame remains due
 **October 18** and follows its own repository instructions. Get Out practice
 does not automatically complete that assignment.
 
