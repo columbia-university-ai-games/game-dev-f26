@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get Out! · Progressive hints</title>
+<link rel="stylesheet" href="style.css">
+<script src="engine.js" defer></script><script src="levels.js" defer></script><script src="hints.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a class="brand" href="./">GAME LAB <span>/ 05</span></a><span class="course">AI IN PRACTICE · COLUMBIA</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A SMALL PUZZLE ABOUT CHANGING DIRECTION</p><h1>Get Out<span>!</span></h1><p class="lede">One way out. A few useful walls.<br>Slide, stop, and find your next move.</p></div><div class="rule-card"><span class="rule-number">01 →</span><p>Choose a direction. You slide until a wall or the edge stops you. Reach the door to escape.</p><small>Arrow keys, WASD, swipe, or the direction buttons.</small></div></section>
+<div class="workspace">
+<section class="play-panel" aria-label="Puzzle play area">
+<div class="board-heading"><div><p class="eyebrow" id="level-number">PUZZLE 01 / 04</p><h2 id="level-title">Find your feet</h2></div><div class="counter"><strong id="moves">0</strong><span>MOVES</span></div></div>
+<div id="board" class="board" tabindex="0" role="group" aria-label="Puzzle board. Use arrow keys to move."></div>
+<div class="legend"><span><i class="you-key"></i>You</span><span><i class="exit-key"></i>Exit</span><span><i class="wall-key"></i>Wall</span><span><i class="start-key"></i>Start</span></div>
+<p id="status" role="status" aria-live="polite">Find a stopping point that helps you reach the exit.</p>
+<div class="play-actions"><button id="undo" class="secondary">↶ Undo</button><button id="reset" class="secondary">↺ Reset</button><button id="next" class="primary" hidden>Next puzzle →</button></div>
+<section id="hint-panel" class="hint-panel" aria-labelledby="hint-title">
+<h3 id="hint-title">Need a nudge?</h3>
+<p class="small">Start with a question. Ask for a clue or a move when you want more help.</p>
+<ol id="hint-list" aria-live="polite" aria-relevant="additions"></ol>
+<button id="hint" class="secondary">Ask a question</button>
+<p class="small hint-reset-note">A successful move or Undo starts a fresh hint sequence.</p>
+</section>
+</section>
+<aside>
+<section class="side-card"><p class="eyebrow">YOUR NEXT MOVE</p><div class="dpad" aria-label="Direction controls"><button data-move="up" aria-label="Move up">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move down">↓</button><button data-move="right" aria-label="Move right">→</button></div><p id="prompt" class="thought"></p><label for="levels">Choose a puzzle</label><select id="levels"></select></section>
+<section class="side-card discussion"><p class="eyebrow">PAUSE & DISCUSS</p><h3>Closer to the door.<br>Closer to a solution?</h3><p>When did a wall become useful? What changed your mind about your next move?</p></section>
+<section class="side-card"><p class="eyebrow">WORKSHOP COMPANIONS</p><p>Choose a puzzle question, then build and test your variation.</p><div class="guide-buttons"><button class="secondary" data-guide="designers-guide">Designer’s guide</button><button class="secondary" data-guide="codex-guide">Codex starter guide</button></div></section>
+<section class="side-card"><p class="eyebrow">MAKE ONE FOR A PARTNER</p><p>Arrange the walls. Choose a start and an exit. Can you create a moment of discovery?</p><button id="edit" class="primary">Design a puzzle ↗</button>
+<div id="editor" hidden><fieldset><legend>Paint a square</legend><div class="tools"><label><input type="radio" name="tool" value="#" checked> Wall</label><label><input type="radio" name="tool" value="."> Clear</label><label><input type="radio" name="tool" value="S"> Start</label><label><input type="radio" name="tool" value="E"> Exit</label></div></fieldset><p class="small">Tap the board to paint. Placing a start or exit moves the previous one.</p><button id="blank" class="secondary">Clear board</button><button id="play-custom" class="primary">Check & play</button><button id="cancel-edit" class="secondary">Cancel</button></div>
+<details id="exchange"><summary>Exchange a board</summary><label for="board-code">Board code: S = start, E = exit, # = wall, . = floor</label><textarea id="board-code" rows="7" spellcheck="false"></textarea><div class="code-actions"><button id="export" class="secondary">Get current code</button><button id="import" class="secondary">Load code</button></div><p class="small">Copy the code to a partner. Load their code to play it. Boards must be rectangular and solvable.</p></details></section>
+</aside>
+</div>
+<details class="trace"><summary>Inspect your move trace</summary><p>Compare what you tried with what the game did. Blocked moves are recorded but do not add to the move count.</p><ol id="trace-list"><li>No moves yet.</li></ol><button id="download" class="secondary">Download trace (JSON)</button></details>
+<section class="workshop-guides" aria-label="Workshop guides">
+<p class="eyebrow">FROM PLAYER TO DESIGNER</p>
+<h2>Make a change worth testing.</h2>
+<p class="guide-intro">Play first. Then choose one design question, build a small variation, and watch someone try it. These guides stay with your copy of the game.</p>
+<details id="designers-guide" class="workshop-guide">
+<summary>Designer’s guide <span>Schell-inspired questions and experiments</span></summary>
+<div class="guide-content">
+<p>Use these questions to investigate your puzzle. In Jesse Schell’s <em>The Art of Game Design</em>, third edition, puzzles are in <strong>Chapter 14, with Lens 58: The Puzzle</strong>. Chapter 13 concerns balance. These are original classroom applications of his principles, not excerpts from the book.</p>
+<div class="guide-callout"><strong>Start with a prediction.</strong><p>“If I change ___, I expect a player to ___ because ___.” Name something you could observe that would make you question your prediction. Change one thing before adding more.</p></div>
+<div class="principle-grid">
+<article class="principle-card"><p class="eyebrow">01 · A CLEAR GOAL</p><h3>Can the player tell what success means?</h3><p><strong>Try:</strong> revise the exit marker or the opening instruction.</p><p><strong>Watch:</strong> ask a new player what they are trying to accomplish before their first move.</p></article>
+<article class="principle-card"><p class="eyebrow">02 · AN ACCESSIBLE START</p><h3>What can one move teach?</h3><p><strong>Try:</strong> a tiny introductory board that demonstrates sliding and stopping.</p><p><strong>Watch:</strong> can the player predict where the next move will end without your explanation?</p></article>
+<article class="principle-card"><p class="eyebrow">03 · VISIBLE PROGRESS</p><h3>What has the player learned so far?</h3><p><strong>Try:</strong> mark visited stopping positions as an exploration record.</p><p><strong>Watch:</strong> does that record inform a decision? Being nearer the door does not necessarily mean being nearer a solution.</p></article>
+<article class="principle-card"><p class="eyebrow">04 · CONFIDENCE IN A SOLUTION</p><h3>Why believe a route exists?</h3><p><strong>Try:</strong> a solver-verified assurance or a clue about a reachable stopping point.</p><p><strong>Watch:</strong> when does the player stop guessing? Distinguish solvability from the start from solvability at the current position.</p></article>
+<article class="principle-card"><p class="eyebrow">05 · A LEARNING SEQUENCE</p><h3>What prepares the player for the next board?</h3><p><strong>Try:</strong> three boards that introduce, vary, and combine an idea.</p><p><strong>Watch:</strong> can the player use that idea on a new board? A longer shortest path alone does not prove greater difficulty.</p></article>
+<article class="principle-card"><p class="eyebrow">06 · PARALLEL CHALLENGES</p><h3>What else could someone try when stuck?</h3><p><strong>Try:</strong> offer a choice of two puzzles with a way to return.</p><p><strong>Watch:</strong> does switching help the player discover an idea, or leave them unsure where to begin?</p></article>
+<article class="principle-card"><p class="eyebrow">07 · COMBINING IDEAS</p><h3>Can two small discoveries solve a larger puzzle?</h3><p><strong>Try:</strong> two short teaching boards and a third requiring both ideas.</p><p><strong>Watch:</strong> ask which earlier discovery helped. Look for transfer rather than repeated trial and error.</p></article>
+<article class="principle-card"><p class="eyebrow">08 · USEFUL HINTS</p><h3>What is the smallest helpful nudge?</h3><p><strong>Try:</strong> an optional question, then a relevant feature, then the next move.</p><p><strong>Watch:</strong> record the hint level requested. Can the player explain their next decision afterward?</p></article>
+<article class="principle-card"><p class="eyebrow">09 · LEARNING FROM AN ANSWER</p><h3>What could revealing a solution teach?</h3><p><strong>Try:</strong> a clearly labeled, optional walkthrough followed by a new board using the same idea.</p><p><strong>Watch:</strong> can the player apply what they saw? Keep a hint distinct from a full reveal.</p></article>
+<article class="principle-card"><p class="eyebrow">10 · A CHANGE IN PERSPECTIVE</p><h3>When does a surprising insight feel fair?</h3><p><strong>Try:</strong> a board whose solution begins by moving away from the exit.</p><p><strong>Watch:</strong> what assumption changes? Ask whether the discovery felt satisfying or arbitrary, and why.</p></article>
+</div>
+<div class="guide-columns">
+<section><h3>Watch someone play</h3><ol><li>Give a neighbor the game and its on-screen instructions. Observe without coaching.</li><li>Record the board, version, order, hints, resets, completion, and one revealing action or remark. Use anonymous labels.</li><li>Ask “What were you trying to do?” and “What changed your understanding?”</li><li>Compare the observation with your prediction, note a limitation, and revise one thing.</li></ol></section>
+<section><h3>Keep the evidence honest</h3><p>A faster second solve may reflect remembering the solution. Use different players or alternate the order across pairs; use comparable new boards to examine transfer.</p><p>Rule tests establish specified behavior. The solver establishes reachability. Human play and conversation provide evidence about understanding and experience. A tiny classroom sample remains exploratory.</p><p>Use the editor to try original boards, Check &amp; play to verify reachability, and Exchange a board to trade with a partner. The move trace records actions, not feelings.</p></section>
+</div>
+<p class="guide-footnote">Choose one exercise in the repository’s <code>minigames/EXERCISES.md</code>. Record your experiment in your own game folder. The shared reference stays available for comparison.</p>
+</div>
+</details>
+<details id="codex-guide" class="workshop-guide">
+<summary>Codex starter guide <span>From your first prompt to a reviewable variation</span></summary>
+<div class="guide-content">
+<p>Use Codex as your building assistant. You choose the design question, inspect the change, and interpret the human playtest. This browser game itself needs no account or model connection.</p>
+<ol class="starter-steps">
+<li><h3>Play first, then exchange puzzles</h3><p>Try Get Out yourself. Then choose <strong>Design a puzzle</strong>, arrange a board, and choose <strong>Check &amp; play</strong>. Use <strong>Exchange a board → Get current code</strong> to share it with a neighbor. Paste their code and choose <strong>Load code</strong>.</p><p>Watch each other play without coaching. What changed your understanding? Use the Designer’s guide to choose one thing you want to change. Keep your board code if you want to use it later.</p></li>
+<li><h3>Ask Codex to make it yours</h3><p>Open the class <code>game-dev-f26</code> project in Codex and paste this:</p><blockquote>Use the minigame-variation skill to help me make my own Get Out. Use my signed-in GitHub account and set up my branch and game folder automatically. After playing my neighbor’s puzzle, I want to change: [your idea]. Make one small change, test it, and show me how to play my version.</blockquote><p>Include your board code if you want to keep the puzzle you designed. If you are undecided, describe what you observed and ask Codex to help choose a change. Hints are just one possible experiment.</p><p>Codex gets your login from GitHub, creates your branch and game folder, and runs the checks. You do not need to type your username, run setup commands, or install a separate plugin. If the skill is not found, tell Codex to read <code>.agents/skills/minigame-variation/SKILL.md</code>.</p></li>
+<li><h3>Play the change and keep what you learn</h3><p>Play your version, then trade with a neighbor again. Tell Codex what actually happened and what you want to revise. You supply the design decisions and interpretation; Codex can record your words and the checks it ran.</p><p>When you want to save it for review, say:</p><blockquote>Review my variation and prepare a draft pull request to the class repository. Include only my game folder. Record what we tested and leave missing human observations unfinished.</blockquote><p>Codex handles the review, commit, branch push, and draft PR. The instructor reviews and merges it later. Your game appears in the shared gallery after merging.</p></li>
+</ol>
+<details class="setup-help"><summary>If setup gets in the way</summary><p>Ask a TA and keep playing while access is fixed. Building needs the full class checkout, Codex, a signed-in GitHub CLI, Python 3.11+, and Node 22+. The instructor/TA checks these before class. A downloaded game or gallery is enough to play, but it does not contain the full development tools.</p><p>Use the course’s <a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="noreferrer">Codex CLI instructions</a> or <a href="https://openai.com/codex/" target="_blank" rel="noreferrer">native app</a> for installation. Existing work should be preserved. The repository’s <code>minigames/STUDENT-GUIDE.md</code> has the same short workflow.</p></details>
+<div class="guide-callout"><strong>Check CourseWorks for the current assignment and deadline.</strong><p>Get Out and the Motivation Atlas are separate assignments. Transfer the workflow to your midterm using its own source material and project rules; building-assistant access is separate from configuring a model that plays your game.</p></div>
+</div>
+</details>
+</section>
+
+<footer><p>A classroom adaptation of Eric Zimmerman’s <em>Get Out!</em>, exercise 11 in <em>The Rules We Break</em> (pp. 90–97). Original teaching boards and interface.</p><a href="https://theruleswebreak.com/gamesheets.html" target="_blank" rel="noreferrer">Author’s game sheets ↗</a><p class="small">Puzzle workshop · No account, model connection, or score submission.</p></footer>
+</main>
+</body></html>
