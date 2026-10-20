@@ -1,0 +1,6 @@
+## Design and playtesting
+
+- **Decisions:** Apply the visible-progress idea from Schell Chapter 14 and Lens 58 by showing previous exploration. A faint trail covers intermediate squares as well as endpoints; dots distinguish places where the player could choose a new direction. The legend explains that revisiting squares can be useful.
+- **Possible outcomes:** Players may recognize prior attempts and repeat unproductive routes less often, which would support keeping the trail. Alternatively, the trail may clutter the board or discourage necessary revisits, suggesting the display or its explanation needs revision.
+- **Playtest:** In my own play, the trail helped a little, but I found the easy levels straightforward, so its benefit was difficult to judge. No reduction in repeated routes was measured. A classmate test is **planned, not completed**: use an unfamiliar, more challenging board, watch repeated routes and necessary revisits, and ask how the player chose a particular move.
+- **Next decision:** Keep the current trail for that test. Retain it if it helps route planning; if it adds clutter or confusion, try marking only the endpoints and test again. All seven game-rule tests and browser checks passed, including movement, undo, reset, hints, completion, and narrow-screen controls. Whether the trail helps on more challenging puzzles remains untested.
