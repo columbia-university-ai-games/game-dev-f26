@@ -74,3 +74,26 @@ environment. Independent follow-up found no issue with the canonical-pin fix.
 No original resources, binaries, dependency caches, private tunnel links or
 credential-pattern matches were included in the export. Hosted course CI is
 recorded after the Draft PR exists; it is not implied by these local checks.
+
+## Published course checkpoint
+
+[Draft PR #55](https://github.com/columbia-university-ai-games/game-dev-f26/pull/55)
+targets `main` from `demonrain7/midterm`. The diff is limited to the complete
+student folder and `.github/workflows/midterm-demonrain7.yml`. The original
+course checkout's three unrelated modified files remain untouched.
+
+At source commit `3499915`, a real `s1-entrance` baseline preflight ran 80 actions
+and 640 player ticks (native tick 641), ending at `action_limit`, task score 0.
+It made no model calls, used no held-out case, and cost $0 in model requests.
+The [text trace and result](situation-preflight-20261021/result.json) are retained
+with their source revision/configuration; original frames stay local. This is
+integration evidence and a continued baseline limitation, not a successful clear.
+
+All four project CI jobs passed at `3499915`: Linux and macOS native tests,
+browser input regressions, and information-boundary/episode-limit tests. See
+[the machine-readable CI record](course-ci-20261021.json). Shared Python/minigame
+runtime checks also passed, but **overall course CI is not fully green**:
+`Minigame submission boundaries` rejects the permitted new workflow because the
+trusted-base guard protects `.github/` without a midterm exception. The exact
+failure and run link are recorded. This requires a course-maintainer adjustment
+or disposition; no shared workflow, guard, or classmate file was changed.

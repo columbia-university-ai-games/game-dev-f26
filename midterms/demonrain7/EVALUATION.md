@@ -47,3 +47,11 @@ generalization, and no training or learning claim is made.
 Pending final additions: frozen-player comparison table with actual traces,
 failure/cost interpretation, actual peer notes, student's limitations and
 recording link. Resource delivery to a fresh recipient is also unresolved.
+
+October 21 course-folder preflight: the unchanged baseline completed 80 actions
+on `s1-entrance`, stopped at 640 player ticks / native tick 641 with score 0,
+and made no paid requests. [Actual result and trace](docs/evidence/situation-preflight-20261021/result.json)
+are separate from the final 18-trial study. No held-out policy trial was run.
+[Project CI passed](docs/evidence/course-ci-20261021.json) on Linux/macOS and in
+the player/browser jobs; the shared minigame guard still rejects the required
+root workflow. The PR reports that repository-level conflict explicitly.

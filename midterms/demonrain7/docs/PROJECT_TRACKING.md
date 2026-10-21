@@ -9,7 +9,7 @@ The revised assignment explicitly requires **no Asana links for the midterm**. U
 | P0: reconcile assignment | Student / Creative Director | October 21 course PR route, dated full plan, preserved game scope | Audit, active docs and course CI template |
 | P1: declare cases | Student / Design and BI | Three distinct situations/tasks, held-out split and interface equivalents before tuning; target October 22–23 | Three declared starts, five-operation adapter and actual reset tests passed |
 | P2: baseline/live pilot | Student / AI engineering | Purposeful baseline and actual model episode/trace/table by October 26 | Adapter implemented; live sign-in previously failed |
-| P3: source/CI migration | Student / Engineering and QA | Complete permitted `midterms/demonrain7/` plus one workflow; no other changes | Complete permitted source exported; nested build/tests passed; course PR/CI next |
+| P3: source/CI migration | Student / Engineering and QA | Complete permitted `midterms/demonrain7/` plus one workflow; no other changes | Draft PR #55 open; four project CI jobs passed; shared minigame guard conflict and recipient resources remain open |
 | P4: repeated comparison | Student / BI and QA | Matched baseline/current/history; normally two trials × three situations per policy | Final suite pending; target October 27–November 1 |
 | P5: review/peer/ownership | Student / QA and Creative Director | Actual notes given/received by November 6, personal log and new-change review | Earlier and new-interface independent reviews complete; human work pending |
 | P6: delivery | Student / Executive Producer | Fresh course clone, recording and complete course PR/CourseWorks URL by November 7, 11:59 p.m. | Candidate history exists; hand-in pending |

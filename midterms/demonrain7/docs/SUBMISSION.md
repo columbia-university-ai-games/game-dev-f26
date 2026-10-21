@@ -1,8 +1,10 @@
-AI-use disclosure: On October 21, 2026, Codex read the live revised assignment and updated this delivery checklist. No final CourseWorks submission or course-repository midterm PR was made during this audit.
+AI-use disclosure: On October 21, 2026, Codex read the live revised assignment and updated this delivery checklist. The course Draft PR now exists; no final CourseWorks submission has been made.
 
 # Required midterm submission
 
 Source: [Midterm assignment, revised October 21](https://courseworks2.columbia.edu/courses/258228/assignments/1749857), especially **What you submit** and **Required hand-in steps**. Due **Saturday November 7, 2026, 11:59 p.m. America/New_York**.
+
+Active checkpoint: [course Draft PR #55](https://github.com/columbia-university-ai-games/game-dev-f26/pull/55). Continue pushing `demonrain7/midterm`; no new course PR is needed per checkpoint. The project jobs pass, while the shared minigame guard rejects the new workflow required by this hand-in. See [CI evidence](evidence/course-ci-20261021.json).
 
 ## Destination and boundary
 

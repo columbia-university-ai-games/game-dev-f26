@@ -1,0 +1,18 @@
+{
+  "source_revision": "34999150c7d6fcb076641e42db70b4140724bb45",
+  "purpose": "Real development-case integration preflight; not final evaluation or live model play",
+  "situation": "s1-entrance",
+  "seed": 201,
+  "policy": "baseline",
+  "held_out_cases_run": false,
+  "resources_included": false,
+  "frames_included": false,
+  "native_stderr_empty": true,
+  "evidence_sha256": {
+    "decisions.jsonl": "b01e672d6610fa9eae8e428da7c0fca66595db34aa3ba31f9075da0889bee773",
+    "evaluation-config.json": "34dd4bcd1fdc8cf7f3f1fc13407239071aaffbc1daf05aaf665d4a525c0a8e57",
+    "native-configuration.json": "66a833ea8b6cc41d3d7249d506a410786fa56c25fd2dd28a828cef0a4ebf533a",
+    "native-trace.jsonl": "9aa63a190ee62b77f973d08e67d9b490cc561a499abf8fe9875d389a3085c294",
+    "result.json": "5425666125535764ea5e3f5005a2a8be9ed47e1eac4612d1e4f89992d137f772"
+  }
+}

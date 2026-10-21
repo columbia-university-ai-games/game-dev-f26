@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "course_pr": "https://github.com/columbia-university-ai-games/game-dev-f26/pull/55",
+  "tested_head": "34999150c7d6fcb076641e42db70b4140724bb45",
+  "workflow_url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927578",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "Catacomb browser input regressions",
+      "conclusion": "success",
+      "url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927578/job/119513062238"
+    },
+    {
+      "name": "Catacomb native rules (macos-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927578/job/119513062483"
+    },
+    {
+      "name": "Catacomb information boundaries and episode limits",
+      "conclusion": "success",
+      "url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927578/job/119513062866"
+    },
+    {
+      "name": "Catacomb native rules (ubuntu-latest)",
+      "conclusion": "success",
+      "url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927578/job/119513063904"
+    }
+  ],
+  "shared_check": {
+    "name": "Minigame submission boundaries",
+    "conclusion": "failure",
+    "url": "https://github.com/columbia-university-ai-games/game-dev-f26/actions/runs/39683927654/job/119513064544",
+    "cause": "The trusted-base minigame guard protects the entire .github workflow directory, including the one workflow required by the revised midterm hand-in. No midterm exception exists in scripts/minigames.py:163-175.",
+    "rejected_path": ".github/workflows/midterm-demonrain7.yml",
+    "disposition": "Documented for course maintainers. Shared tooling was not changed or bypassed; allowed project scope is preserved."
+  }
+}

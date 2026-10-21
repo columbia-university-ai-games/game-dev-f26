@@ -18,14 +18,14 @@ The [completion plan](MIDTERM_PLAN.md) covers phases P0–P6, owners, dependenci
 | Declared suite/held-out cases | Three distinct reachable starts declared before tuning; development/held-out split and 18-trial preflight plan implemented; live comparison pending |
 | Current-frame/history comparison | Both implemented; actual matched live trials pending |
 | Limits/failures/leakage | Implemented/tested; preserve through situation support and expose all metrics in final table |
-| Deterministic CI | Course workflow installed; nested Windows build and 31 offline player/evaluation tests passed; hosted CI pending |
+| Deterministic CI | Four course project jobs passed at 3499915; 31 offline tests and nested Windows build passed. Shared minigame workflow-protection check conflicts with the required file; see course CI evidence |
 | Production agents | Instructions, skill and independent review exist; implementation-session links and two named skill invocations need an audit trail |
 | Course-folder `README.md` | Direct commands from the student folder prepared; course migration verification recorded separately |
 | Course-folder `EVALUATION.md` | Top-level checkpoint links actual historical results and new protocol; final live table pending |
 | Course-folder `AGENT-TEAM.md` | Top-level agent-prepared evidence inventory exists; student's final one-page version pending |
 | Peer notes received/given | Protocol prepared; actual 15-minute partner play and notes pending, notes due November 6 |
 | Recording | Outline/scripted acceptance clip exist; 3–5 minute autonomous-model demonstration pending |
-| Course PR | One PR to `game-dev-f26`, base `main`, complete `midterms/demonrain7/` plus one workflow; not created yet |
+| Course PR | [Draft PR #55](https://github.com/columbia-university-ai-games/game-dev-f26/pull/55), base `main`, complete student folder plus one workflow; continue the same PR |
 | Staff invitations / Asana | Removed from midterm requirements by the explicit October 21 hand-in steps |
 | CourseWorks | Submit the course PR URL; personal repo/tag links are insufficient; not submitted |
 

@@ -53,7 +53,8 @@ Follow phases **P0–P6** in [MIDTERM_PLAN.md](MIDTERM_PLAN.md). Earlier results
 - [x] Add only `.github/workflows/midterm-demonrain7.yml` outside that folder; preserve shared configuration and classmates' files.
 - [ ] Establish lawful recipient resource supply and any necessary publication permission; exclude private/identifying content and original data without permission.
 - [x] Fix nested-folder and packaging assumptions; state working directories for all README commands.
-- [ ] Open one course PR and verify all five deterministic CI kinds there.
+- [x] Open [course Draft PR #55](https://github.com/columbia-university-ai-games/game-dev-f26/pull/55) and verify all five deterministic CI kinds in the four project jobs.
+- [ ] Course maintainer disposition of the shared minigame guard rejecting the required workflow path; overall course CI is not yet fully green.
 
 ## P4 — Run the comparison (target October 27–November 1)
 

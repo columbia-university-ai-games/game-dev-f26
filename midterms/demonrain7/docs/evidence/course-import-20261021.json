@@ -14,5 +14,6 @@
     "offline_player_tests": 31,
     "standalone_real_resource_tests": 8
   },
-  "hosted_ci": "pending"
+  "hosted_ci": "All four project jobs passed at 3499915; one shared minigame guard conflicts with the required workflow path. See course-ci-20261021.json.",
+  "course_pr": "https://github.com/columbia-university-ai-games/game-dev-f26/pull/55"
 }

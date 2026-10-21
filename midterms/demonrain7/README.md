@@ -47,6 +47,13 @@ model calls and downloads no original resources. Real-resource integration is
 an additional local check. CI does not establish full original-game fidelity
 or an interactive playtest on the student's Mac.
 
+[Course Draft PR #55](https://github.com/columbia-university-ai-games/game-dev-f26/pull/55)
+is the active submission branch. Continue work here with incremental commits.
+The project's four hosted CI jobs passed; the shared minigame boundary check
+rejects the midterm-required workflow path and needs a maintainer disposition.
+See [the recorded CI result](docs/evidence/course-ci-20261021.json). This remains
+a draft, with live comparison, resources for recipients and human evidence pending.
+
 ## Run from the course folder
 
 Start at `midterms/demonrain7/` in the course checkout; all commands below use
