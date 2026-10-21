@@ -9,10 +9,11 @@
   "frames_included": false,
   "native_stderr_empty": true,
   "evidence_sha256": {
-    "decisions.jsonl": "b01e672d6610fa9eae8e428da7c0fca66595db34aa3ba31f9075da0889bee773",
-    "evaluation-config.json": "34dd4bcd1fdc8cf7f3f1fc13407239071aaffbc1daf05aaf665d4a525c0a8e57",
-    "native-configuration.json": "66a833ea8b6cc41d3d7249d506a410786fa56c25fd2dd28a828cef0a4ebf533a",
-    "native-trace.jsonl": "9aa63a190ee62b77f973d08e67d9b490cc561a499abf8fe9875d389a3085c294",
-    "result.json": "5425666125535764ea5e3f5005a2a8be9ed47e1eac4612d1e4f89992d137f772"
-  }
+    "decisions.jsonl": "f3829ea3ae36be46f6ef0657a0ed7d62ed1e3ac6ee9cd133d7ba1fb5955a9925",
+    "evaluation-config.json": "3d5870ade3398220d2846067b4185f47c22ccd85f914a5c8b3477e87faef9bb9",
+    "native-configuration.json": "448ab517df7be1cb86081ecdf30d5b5d61c9964fc17835709a4f3d14dddfe6e7",
+    "native-trace.jsonl": "185457bd4af1d36c27dfd6a65f71068ab01c8544cb987a1181c8d17b86715d07",
+    "result.json": "148d49cb19fad970630716185cf15e28e77b537c404e5a9f6924605afb523d5f"
+  },
+  "evidence_hash_format": "SHA-256 of committed text blobs with LF line endings; native image/resource hashes retain their documented binary meaning."
 }
