@@ -1,0 +1,39 @@
+{
+  "status": "cleared",
+  "ticks": 612,
+  "actions": 303,
+  "debug_enabled": false,
+  "final_frame_sha256": "e8fc1c98e2e451179ce8e0a3c05f824a879413be5decc295b6e45f9a4a6d34db",
+  "configuration": {
+    "protocol": 1,
+    "level": 1,
+    "max_ticks": 6000,
+    "headless": true,
+    "debug_mode": false,
+    "timing": "stepped; paused between actions; initial neutral tick",
+    "executable_sha256": "53dd79a40b4f469ddb7f1635e0cac17d139e22757197e870cd1ec9666c2c05cf",
+    "resources_sha256": {
+      "SOUNDS.CA2": "6ce4ab7497c8c70b375b0e882835a6b86fe61751b77cb05af54bd542dcccd423",
+      "EGACHARS.CA2": "53a029112aa856c619e16f76ccde31388b7fc8ffeaf5192a0de598324f34bd5b",
+      "EGAPICS.CA2": "d0584aea535eaabc23e9bda56c1d96755720faf58d64c51b1eec142c18dececa",
+      "LEVEL1.CA2": "8e2bd5ed2a137d9440892a9788bf3e20f44226bbc36f53a317c3cd096eabf184"
+    },
+    "started_at": "2026-10-19T23:53:02.037661+00:00"
+  },
+  "evidence_type": "Privileged route discovery followed by ordinary debug-disabled replay; not a baseline or model evaluation.",
+  "discovery_final_player": {
+    "hp": 13,
+    "keys": 1,
+    "potions": 5,
+    "bolts": 3,
+    "nukes": 1,
+    "power": 2,
+    "burst": 0,
+    "score": 150,
+    "god": 0,
+    "x": 39,
+    "y": 28,
+    "direction": 0,
+    "delay": 0
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "planned": 5,
+    "attempted": 5,
+    "with_actions": 5,
+    "cleared": 0,
+    "clear_rate_attempted": 0.0,
+    "wilson_95_descriptive": [
+      0,
+      0.43448246478317476
+    ],
+    "terminations": {
+      "action_limit": 5
+    },
+    "median_actions": 80,
+    "median_request_seconds": null,
+    "estimated_usd": 0.0,
+    "accounted_tokens": 0,
+    "invalid_actions": 0,
+    "model_versions": []
+  },
+  "current": {
+    "planned": 5,
+    "attempted": 0,
+    "with_actions": 0,
+    "cleared": 0,
+    "clear_rate_attempted": null,
+    "wilson_95_descriptive": null,
+    "terminations": {
+      "reauthentication_required": 5
+    },
+    "median_actions": null,
+    "median_request_seconds": null,
+    "estimated_usd": 0,
+    "accounted_tokens": 0,
+    "invalid_actions": 0,
+    "model_versions": []
+  },
+  "history": {
+    "planned": 5,
+    "attempted": 0,
+    "with_actions": 0,
+    "cleared": 0,
+    "clear_rate_attempted": null,
+    "wilson_95_descriptive": null,
+    "terminations": {
+      "reauthentication_required": 5
+    },
+    "median_actions": null,
+    "median_request_seconds": null,
+    "estimated_usd": 0,
+    "accounted_tokens": 0,
+    "invalid_actions": 0,
+    "model_versions": []
+  }
+}

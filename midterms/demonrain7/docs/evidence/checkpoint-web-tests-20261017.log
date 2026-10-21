@@ -1,0 +1,13 @@
+test_cross_origin_requests_are_denied (__main__.WebIntegrationTests.test_cross_origin_requests_are_denied) ... ok
+test_duplicate_action_is_not_applied_twice (__main__.WebIntegrationTests.test_duplicate_action_is_not_applied_twice) ... ok
+test_finished_episode_does_not_keep_running (__main__.WebIntegrationTests.test_finished_episode_does_not_keep_running) ... ok
+test_http_and_direct_native_actions_produce_identical_pixels (__main__.WebIntegrationTests.test_http_and_direct_native_actions_produce_identical_pixels) ... ok
+test_invalid_actions_and_observation_do_not_advance (__main__.WebIntegrationTests.test_invalid_actions_and_observation_do_not_advance) ... ok
+test_no_auth_cannot_start_read_or_control_a_game (__main__.WebIntegrationTests.test_no_auth_cannot_start_read_or_control_a_game) ... ok
+test_only_allowlisted_assets_are_served (__main__.WebIntegrationTests.test_only_allowlisted_assets_are_served) ... ok
+test_session_limit_and_closing (__main__.WebIntegrationTests.test_session_limit_and_closing) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 17.540s
+
+OK

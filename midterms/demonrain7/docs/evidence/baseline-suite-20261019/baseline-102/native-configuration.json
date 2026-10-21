@@ -1,0 +1,16 @@
+{
+  "protocol": 1,
+  "level": 1,
+  "max_ticks": 2000,
+  "headless": true,
+  "debug_mode": false,
+  "timing": "stepped; paused between actions; initial neutral tick",
+  "executable_sha256": "53dd79a40b4f469ddb7f1635e0cac17d139e22757197e870cd1ec9666c2c05cf",
+  "resources_sha256": {
+    "SOUNDS.CA2": "6ce4ab7497c8c70b375b0e882835a6b86fe61751b77cb05af54bd542dcccd423",
+    "EGACHARS.CA2": "53a029112aa856c619e16f76ccde31388b7fc8ffeaf5192a0de598324f34bd5b",
+    "EGAPICS.CA2": "d0584aea535eaabc23e9bda56c1d96755720faf58d64c51b1eec142c18dececa",
+    "LEVEL1.CA2": "8e2bd5ed2a137d9440892a9788bf3e20f44226bbc36f53a317c3cd096eabf184"
+  },
+  "started_at": "2026-10-20T00:12:23.573725+00:00"
+}

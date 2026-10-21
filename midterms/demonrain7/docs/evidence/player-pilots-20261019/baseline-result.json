@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "policy": "baseline",
+  "seed": 101,
+  "live_model": false,
+  "started_at": "2026-10-20T00:00:44.058872+00:00",
+  "config_sha256": "0f00157c24f35728f7750c98dd6ed80d30c12da96160d77e476a6dbcfdd1eb26",
+  "prompt_sha256": "9de8b4433348661df9937d0d61722a8897136f684d2b0b6d115d182971f2457f",
+  "game_status": "running",
+  "termination": "action_limit",
+  "actions": 80,
+  "invalid_actions": 0,
+  "ticks": 641,
+  "model_versions": [],
+  "latencies_seconds": [],
+  "frames": 81,
+  "final_frame_sha256": "a4362b73669978c49a1623e57a9457de27596266bcbfb40e8759ceb034cc1efb",
+  "elapsed_seconds": 24.469765700006974,
+  "model_calls": 0,
+  "accounted_tokens": 0,
+  "estimated_usd": 0.0,
+  "unique_frame_hashes": 81
+}

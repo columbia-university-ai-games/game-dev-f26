@@ -1,0 +1,77 @@
+{
+  "ai_use_disclosure": "Codex verified the packaged candidate, published authorized GitHub artifacts, and recorded these observed results.",
+  "date_local": "2026-10-19",
+  "source_revision": "18d53bccc88d62f99e82fff08a304a5b4796a9c5",
+  "tag": "midterm-v0.1.0-rc1",
+  "release_url": "https://github.com/DemonRain7/catacomb-midterm/releases/tag/midterm-v0.1.0-rc1",
+  "assets": [
+    {
+      "name": "catacomb-midterm-v0.1.0-rc1-source.zip",
+      "bytes": 367643,
+      "sha256": "2e96ffbdd385cc152475b01d3d8962df89d362c739b4c6231e86fbe6304ec8e9",
+      "url": "https://github.com/DemonRain7/catacomb-midterm/releases/download/midterm-v0.1.0-rc1/catacomb-midterm-v0.1.0-rc1-source.zip"
+    },
+    {
+      "name": "catacomb-midterm-v0.1.0-rc1-windows-x64.zip",
+      "bytes": 1096472,
+      "sha256": "7b1a58ea75881ba2f37c66ac8c011ec2f421ae5bc53ddaa2ed4ead3cf63b12ea",
+      "url": "https://github.com/DemonRain7/catacomb-midterm/releases/download/midterm-v0.1.0-rc1/catacomb-midterm-v0.1.0-rc1-windows-x64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 217,
+      "sha256": "7d529b44d30448760c63753acce36b2d5e5d6d46904a3187f180123dadb4889d",
+      "url": "https://github.com/DemonRain7/catacomb-midterm/releases/download/midterm-v0.1.0-rc1/SHA256SUMS.txt"
+    }
+  ],
+  "ci_url": "https://github.com/DemonRain7/catacomb-midterm/actions/runs/39348058091",
+  "ci_conclusion": "success",
+  "local_tests": {
+    "player_and_evaluation": 20,
+    "release": 4,
+    "real_http_native": 8
+  },
+  "packaged_acceptance": {
+    "actions": 303,
+    "ticks": 612,
+    "status": "cleared",
+    "debug_enabled": false,
+    "final_frame_sha256": "e8fc1c98e2e451179ce8e0a3c05f824a879413be5decc295b6e45f9a4a6d34db"
+  },
+  "native_configuration": {
+    "protocol": 1,
+    "level": 1,
+    "max_ticks": 6000,
+    "headless": true,
+    "debug_mode": false,
+    "timing": "stepped; paused between actions; initial neutral tick",
+    "executable_sha256": "f4443b0b49b9f645a5a3f1f8223e553f40b5a557e73973d5e99ffbeb52b92778",
+    "resources_sha256": {
+      "SOUNDS.CA2": "6ce4ab7497c8c70b375b0e882835a6b86fe61751b77cb05af54bd542dcccd423",
+      "EGACHARS.CA2": "53a029112aa856c619e16f76ccde31388b7fc8ffeaf5192a0de598324f34bd5b",
+      "EGAPICS.CA2": "d0584aea535eaabc23e9bda56c1d96755720faf58d64c51b1eec142c18dececa",
+      "LEVEL1.CA2": "8e2bd5ed2a137d9440892a9788bf3e20f44226bbc36f53a317c3cd096eabf184"
+    },
+    "started_at": "2026-10-20T00:30:05.355274+00:00"
+  },
+  "browser_check": {
+    "browser": "external Chrome",
+    "packaged_server": true,
+    "startup": "passed",
+    "movement": "passed",
+    "pause": "passed",
+    "developer_button_visible": false,
+    "page_errors": [],
+    "restart": "unverified: browser automation blocked by native confirmation dialog"
+  },
+  "language_check": "No CJK text found in tracked UTF-8 files",
+  "limitations": [
+    "live model gameplay/comparison blocked by reauthentication",
+    "scope agreement not recorded",
+    "actual peer notes and student recording pending",
+    "Asana signed out",
+    "course staff private-repository access pending",
+    "original-DOS equivalence not established",
+    "native keyboard/audio not tested by a human in this check"
+  ]
+}

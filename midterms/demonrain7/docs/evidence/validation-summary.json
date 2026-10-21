@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-12",
+  "platform": "Windows x64",
+  "evidence_type": "summary of observed tool output; not a fabricated raw test log",
+  "ctest_groups": {
+    "passed": 3,
+    "failed": 0,
+    "raw_log": "windows-ctest-20261012.log"
+  },
+  "real_asset_integration": {
+    "command": "python tests/test_live_game.py --exe build/catacomb.exe --data data/original",
+    "passed": 5,
+    "failed": 0,
+    "seconds": 13.171
+  },
+  "skill_validation": "python -X utf8 quick_validate.py skills/catacomb-validation: Skill is valid!",
+  "bash_syntax": [
+    "scripts/build-macos.sh",
+    "play-macos.command"
+  ],
+  "demo": {
+    "frames": 9,
+    "final_ticks": 177,
+    "final_status": "running",
+    "stderr_bytes": 0
+  },
+  "not_established": [
+    "Mac execution",
+    "independent review",
+    "human playtest",
+    "complete level traversal",
+    "original DOS equivalence",
+    "model performance"
+  ]
+}

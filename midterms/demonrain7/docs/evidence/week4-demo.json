@@ -1,0 +1,141 @@
+{
+  "purpose": "Week 4 core-loop and observation/action demonstration",
+  "mode": "Original C/SDL2 engine, headless, real .CA2 assets, fixed action script",
+  "limitations": "Not a model player, competent baseline, original-DOS fidelity comparison or human playtest.",
+  "frames": [
+    {
+      "label": "Initial real level 1",
+      "image": "00000.png",
+      "ticks": 1,
+      "status": "running"
+    },
+    {
+      "label": "Walk down the starting corridor",
+      "image": "00001.png",
+      "action": {
+        "direction": "south",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 32
+      },
+      "ticks": 33,
+      "status": "running",
+      "sha256": "c99d37703dc5e73336c713475cbf59ca8d45d0e361981387f1997595d62e6c9e"
+    },
+    {
+      "label": "Continue south",
+      "image": "00002.png",
+      "action": {
+        "direction": "south",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 32
+      },
+      "ticks": 65,
+      "status": "running",
+      "sha256": "9b98189950ad1293d1e8ec753d9d2ca6505a4dbc156f80b0398bd319020b9f3c"
+    },
+    {
+      "label": "Turn and move east",
+      "image": "00003.png",
+      "action": {
+        "direction": "east",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 16
+      },
+      "ticks": 81,
+      "status": "running",
+      "sha256": "48a30631f099003ff265253d0c9c47b72958402474764a71ffcf8f206869ef3d"
+    },
+    {
+      "label": "Hold fire to charge",
+      "image": "00004.png",
+      "action": {
+        "direction": "none",
+        "fire": true,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 32
+      },
+      "ticks": 113,
+      "status": "running",
+      "sha256": "7f3279ae76cb016ad03b3a50f8181322ac98e34d56321f41d03f8db808e6f458"
+    },
+    {
+      "label": "Release fire",
+      "image": "00005.png",
+      "action": {
+        "direction": "none",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 8
+      },
+      "ticks": 121,
+      "status": "running",
+      "sha256": "e0f1f9a5f294a356357697f784646b58901e1d5f055f2d6264105403cf9ed67f"
+    },
+    {
+      "label": "Cast one nuke",
+      "image": "00006.png",
+      "action": {
+        "direction": "none",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": true,
+        "ticks": 8
+      },
+      "ticks": 129,
+      "status": "running",
+      "sha256": "c720a6cb2f4739bbdb4fc7f70d9733e484dff1affed355e69208b44bf16488db"
+    },
+    {
+      "label": "Move south while charging",
+      "image": "00007.png",
+      "action": {
+        "direction": "south",
+        "fire": true,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 32
+      },
+      "ticks": 161,
+      "status": "running",
+      "sha256": "bfd58021045877b4940d533520c7b16c63ae03d01ac91066535eaac690ae9b5b"
+    },
+    {
+      "label": "Release fire again",
+      "image": "00008.png",
+      "action": {
+        "direction": "none",
+        "fire": false,
+        "strafe": false,
+        "potion": false,
+        "bolt": false,
+        "nuke": false,
+        "ticks": 16
+      },
+      "ticks": 177,
+      "status": "running",
+      "sha256": "c29aa1fa2af430d9526d084d6206c484e9307144f80323025518f771c7e8ae6b"
+    }
+  ]
+}

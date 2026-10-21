@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "source_repository": "https://github.com/DemonRain7/catacomb-midterm",
+  "source_revision": "aac75ff",
+  "initial_export_revision": "81a6bf604b0d4cedc3919f17ae224832298c20ff",
+  "upstream_revision": "473d13629a2350e2498dd4a158e5bd0b36184160",
+  "course_base_revision": "4a3b5b94442d95caa54d4445c231cd87f456bd9e",
+  "course_branch": "demonrain7/midterm",
+  "source_folder": "midterms/demonrain7",
+  "allowed_extra_file": ".github/workflows/midterm-demonrain7.yml",
+  "content": "Full permitted tracked source plus course delivery/status updates. No original game data, runtime PNGs, binaries, credentials or dependencies.",
+  "local_checks": {
+    "windows_debug_ctest_groups": 4,
+    "offline_player_tests": 31,
+    "standalone_real_resource_tests": 8
+  },
+  "hosted_ci": "pending"
+}

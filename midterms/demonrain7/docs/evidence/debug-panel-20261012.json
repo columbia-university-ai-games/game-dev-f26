@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-10-12T22:39:18.227768+00:00",
+  "verification": "Automated; no human peer playtest or model calls",
+  "mode": "developer controls, disabled in normal sessions",
+  "hashes": {
+    "build-debug/catacomb.exe": "b4011da97d7c86771e6b028aa5b1e778b26525a40c2e239612adbee2e8322e2d",
+    "build/catacomb.exe": "c9bda71676a73fae5fb3a13bff9bbbac41ae9c953eb66497f26969828cbdc098",
+    "data/original/SOUNDS.CA2": "6ce4ab7497c8c70b375b0e882835a6b86fe61751b77cb05af54bd542dcccd423",
+    "data/original/EGACHARS.CA2": "53a029112aa856c619e16f76ccde31388b7fc8ffeaf5192a0de598324f34bd5b",
+    "data/original/EGAPICS.CA2": "d0584aea535eaabc23e9bda56c1d96755720faf58d64c51b1eec142c18dececa",
+    "data/original/LEVEL1.CA2": "8e2bd5ed2a137d9440892a9788bf3e20f44226bbc36f53a317c3cd096eabf184",
+    "debug_tools.c": "6f3102ac599ffbe321bd3390dbd0dfed60d831f3d534025ac106ffd71a636e49",
+    "debug_tools.h": "40cd7620175d51ed0a368af7f0cdd42b43b16c5ad3021e2c83fcb040149a5815",
+    "scripts/debug_env.py": "662bb548f8fcd0e9c7a313fd37618980a27c90ecb5e78ff35c4c0bba00ba3bf0",
+    "web/debug.js": "3ac9c89a24d9a3fb08a10b1f11e18d177ab0c828f79944b60f94fbccf43aa913",
+    "web/app.js": "ccd0eeca718a54925f55276ed5afa8fdc8200e63cc04d20bdddc1ae5d21079a0"
+  },
+  "tests": {
+    "ctest_groups": 3,
+    "debug_native_and_host_tests": 7,
+    "real_http_tests": 8,
+    "buffered_input_browser_tests": 6
+  },
+  "public_https_debug_browser": {
+    "checks": [
+      "Player HP, inventory, score and invulnerability apply without advancing time",
+      "Freeze/noclip flags and enemy class damage, speed, HP and points apply",
+      "Tile editing, spawn, individual object editing and removal work in the native game",
+      "Map click selects coordinates; teleport and a four-tick step work while paused",
+      "Parameter export/import round-trips; defaults restore original class values and flags",
+      "Returning to normal starts a fresh game, disables editing and rejects debug access with HTTP 403",
+      "Level 30 loads from the original resources through the level selector",
+      "390px mobile debug layout has no horizontal overflow"
+    ],
+    "errors": []
+  },
+  "public_https_normal_browser": {
+    "checks": [
+      "Access key accepted and removed from address bar",
+      "Keyboard movement and charge/release send actions; pause stops simulation",
+      "Losing focus pauses and releases held controls",
+      "Restart closes the old game and loads a fresh level",
+      "Mobile layout has no horizontal overflow"
+    ],
+    "errors": []
+  },
+  "normal_vs_previous_binary": "Initial frame plus five actions equal in PNG, ticks and status; not a full fidelity proof",
+  "original_data_verification": "SOUNDS, EGACHARS, EGAPICS and LEVEL1 SHA256 match earlier Week 4 records",
+  "limits": [
+    "Current remote service is temporary and requires this Windows host online",
+    "Debug presets do not save map, objects, RNG or episode progress",
+    "Mac Safari has not been tested",
+    "Model player, baseline and full midterm evaluation remain separate work"
+  ]
+}

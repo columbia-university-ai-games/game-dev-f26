@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-12T23:25:26.585737+00:00",
+  "change": "English UI, accessibility labels, dynamic messages, browser/debug guides, and persistent project language instruction",
+  "document_language": "en",
+  "quick_input_tests": {
+    "passed": 6
+  },
+  "public_https_debug_browser": {
+    "checks": [
+      "Player HP, inventory, score and invulnerability apply without advancing time",
+      "Freeze/noclip flags and enemy class damage, speed, HP and points apply",
+      "Tile editing, spawn, individual object editing and removal work in the native game",
+      "Map click selects coordinates; teleport and a four-tick step work while paused",
+      "Parameter export/import round-trips; defaults restore original class values and flags",
+      "Returning to normal starts a fresh game, disables editing and rejects debug access with HTTP 403",
+      "Level 30 loads from the original resources through the level selector",
+      "390px mobile debug layout has no horizontal overflow"
+    ],
+    "errors": []
+  },
+  "public_https_normal_browser": {
+    "checks": [
+      "Access key accepted and removed from address bar",
+      "Keyboard movement and charge/release send actions; pause stops simulation",
+      "Losing focus pauses and releases held controls",
+      "Restart closes the old game and loads a fresh level",
+      "Mobile layout has no horizontal overflow"
+    ],
+    "errors": []
+  },
+  "source_sha256": {
+    "web/index.html": "a60bed7c57ac99ace6b247cd5adf177ae24f7c23acc5d5d0494086cd9dee87e1",
+    "web/app.js": "79a0aa9e04c32a75e6a0c37a27848203e3b19fe0a9e814860a2812f9f76e917d",
+    "web/debug.js": "d4c0bbd0a2ee92e5e3fc14781ea9d52b3b3e567a54a5a14f99e9768023a437f5",
+    "web/style.css": "dbeff0d8a7e09c95cd952a5b80ec99df559f796aa77fa2a30bb7f0c39fe65549",
+    "AGENTS.md": "f293de04dbdd2bbe6e47a9e9f8a667ee174ca508cb13478b484f9868174e7e6d"
+  },
+  "scope": "Presentation text and layout only; native engine, resource data, and protocol unchanged",
+  "verification": "Headless Chromium desktop/mobile checks and screenshot inspection; not a human playtest or actual Safari test"
+}

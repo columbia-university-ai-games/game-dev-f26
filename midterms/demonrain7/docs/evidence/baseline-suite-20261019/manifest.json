@@ -1,0 +1,174 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-20T00:11:58.775368+00:00",
+  "git_revision": "7768a494917d01a9245922679a0732f62bac2b96",
+  "source_sha256": {
+    "agent_bridge.c": "b47fe2bd5298a1abfdd717a7f7433289a0b7cda22d17a664230931cf75e9b25b",
+    "agent_bridge.h": "9a2d19ce0934f1d7ff56b61b72d0eca323834ec51dc6e33f237722d204457bf8",
+    "agent_protocol.c": "40bcd89255f2d6ce09d613d90adf1339cb005a187ebc25ddb080c75c8025d8a4",
+    "agent_protocol.h": "ce3e917cab98e6595f46a6a1a02d77e7022ea6e6efed2087143bf7efdf82cdee",
+    "cat_play.c": "79750c690a9f8fff8defc62ed095d1497cd30bda51f5ed2778f508265a8b913e",
+    "catacomb.c": "ac91a79a1f552e2cd1e29053d66765466583fe0d83e048358f72e60f362530f4",
+    "catacomb.h": "0175d12e35f7a965ad9370b3fe94a31a5ff803a37ba7f4e01a338574ba2ee626",
+    "catasm.c": "f7fb708450d450a2c36b9096cfbc3f98106bb3e07c555cbaf63cd57b1284fa98",
+    "catdefs.h": "1affb1cdc8a2fd1ec957b7b1d1c0f6afc82801cd9e92b5b648097e1708f32096",
+    "cated.c": "220ccc0f0f2e692509235d000a2baa0a470bc8eb7f19a275613000fbe861f6e9",
+    "cpanel.c": "8d60b3ecf3d96ef9245af0b9d9f278fb80e4f61c133219bdb40828e6aebbd1de",
+    "debug_tools.c": "6f3102ac599ffbe321bd3390dbd0dfed60d831f3d534025ac106ffd71a636e49",
+    "debug_tools.h": "40cd7620175d51ed0a368af7f0cdd42b43b16c5ad3021e2c83fcb040149a5815",
+    "ngrabca2.h": "6e87c0294735678405fd9ed903900c81b988c48fd851f5edc1c3df4c93b52614",
+    "objects.c": "1db176dbd07de88a3ae313186a8a6b15115c998c658c67fdd3918cd6013282b2",
+    "oldcat.c": "a96c3d976fe90caf0a27b65a5ce7535e171ce65914a4dcbecadf275e22efdbb1",
+    "pcrlib.h": "94e20550fec5a7fed4ec4599d2b9eb4b05eb0e8a984f8db7593190170512c599",
+    "pcrlib_a.c": "6f3513bea505e611362417d7d01fad9d999f4478af1159e4c57675a32bd170e3",
+    "pcrlib_c.c": "ccc1a43d6674648db2c9b8bd3e4fca9e7350b8f53390bf83e2bbf911e48663b5",
+    "prompts/player.txt": "9de8b4433348661df9937d0d61722a8897136f684d2b0b6d115d182971f2457f",
+    "pyproject.toml": "1d1a8f8f4d55fc65d5ea674752b6248978fe51e56eac2299615554520366ddb2",
+    "rleasm.c": "6dd62a242301be1cf2278f40ac581adfd908c9ec971b115fa9c4936ac45fdfaf",
+    "scripts/catacomb_env.py": "21b8a9ec5a55bd3863be89ac77d2c553615f87aa28b94a8c0fab71302f8c6f3e",
+    "scripts/check_debug_browser.py": "2420f49d77bf151e9cabbb3819ad3766f679d6facf78761695710e65345d618b",
+    "scripts/check_web_browser.py": "53b98bb909567ac6dc9b5d79a79a39553c3513232d19b2cfa4fe79e611adae2b",
+    "scripts/debug_env.py": "662bb548f8fcd0e9c7a313fd37618980a27c90ecb5e78ff35c4c0bba00ba3bf0",
+    "scripts/evaluate.py": "02b7c68823291861dbb717acaa6f6f554bcc592db38beecc07fca6e5c5447e53",
+    "scripts/player_contract.py": "91dd0b39f73ed0f8c4aa31000c3bea0c2da7e5ded55ec4fd9dc2ba236a966de4",
+    "scripts/record_acceptance.py": "72f622f6377774625ca6ac1bb9756dda5821eea2ce2dd6279de7948efa5fb0e0",
+    "scripts/record_week4_demo.py": "de1389c90b6afba359eac9209e12db8cdc7eff06891cf7d71d8d4efa4fb5fb68",
+    "scripts/run_episode.py": "a63bdab16d54a069aaa537c2979b34f5349920d5a555fb0ac81b121509a13282",
+    "scripts/serve_web.py": "d2f7316d04e905ad7344b64ccc7306011df3c89f669d291395c287faca20bb52",
+    "scripts/vertex_player.py": "04b960bcf8c364ed2b57566cebb946a6ce4f8db9c8821d32817a7ceb712cdead",
+    "scripts/visual_baseline.py": "f541881c754d57a553aaaec192217e0377936361787d78856358e21e18f9e251",
+    "sounds.h": "554f685f5f268d6eb078e4880b5b5369642e87cf34b3a66f8ab65ea270b5315e",
+    "uv.lock": "1010cc9ed005a83db4045310da0b4866f426ea3fb050968e51eefedd24247e3e"
+  },
+  "config_sha256": "0f00157c24f35728f7750c98dd6ed80d30c12da96160d77e476a6dbcfdd1eb26",
+  "config": {
+    "ai_use_disclosure": "Codex implemented this configuration under the student's direction; results are recorded separately from planned settings.",
+    "version": "midterm-v1",
+    "scope": {
+      "game": "Catacomb II",
+      "level": 1,
+      "mode": "classic",
+      "instructor_agreement_record": null
+    },
+    "model": "gemini-3.5-flash-lite",
+    "location": "global",
+    "temperature": 0.2,
+    "thinking_level": "MINIMAL",
+    "max_output_tokens": 512,
+    "history_frames": 3,
+    "prompt": "prompts/player.txt",
+    "limits": {
+      "max_actions": 80,
+      "max_ticks": 2000,
+      "max_calls": 80,
+      "max_total_tokens": 1000000,
+      "max_seconds": 900,
+      "request_timeout_seconds": 30,
+      "max_consecutive_invalid": 2,
+      "max_estimated_usd": 0.3,
+      "input_token_reservation": 32768
+    },
+    "pricing": {
+      "input_usd_per_million": 0.3,
+      "output_usd_per_million": 2.5,
+      "checked_date": "2026-10-19",
+      "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "policy": "Uncached global standard rates; response and thinking tokens count as output. Missing usage is charged at the full reservation. Estimates are not billing statements."
+    },
+    "suite": {
+      "repetitions": 5,
+      "seeds": [
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "max_estimated_usd": 3.0
+    },
+    "information_boundary": "Current PNG/status/ticks and, only in history mode, the last three permitted observation/action/intent records. No files, tools, source, maps, oracle routes, debug state or cross-episode memory.",
+    "failure_policy": "Invalid output leaves the game unchanged and consumes a call; two consecutive invalid outputs stop. Provider failures/timeouts stop without advancing the game. No hidden policy substitution or provider retry."
+  },
+  "plan": [
+    {
+      "id": "baseline-101",
+      "policy": "baseline",
+      "seed": 101
+    },
+    {
+      "id": "baseline-102",
+      "policy": "baseline",
+      "seed": 102
+    },
+    {
+      "id": "baseline-103",
+      "policy": "baseline",
+      "seed": 103
+    },
+    {
+      "id": "baseline-104",
+      "policy": "baseline",
+      "seed": 104
+    },
+    {
+      "id": "baseline-105",
+      "policy": "baseline",
+      "seed": 105
+    },
+    {
+      "id": "current-101",
+      "policy": "current",
+      "seed": 101
+    },
+    {
+      "id": "history-101",
+      "policy": "history",
+      "seed": 101
+    },
+    {
+      "id": "history-102",
+      "policy": "history",
+      "seed": 102
+    },
+    {
+      "id": "current-102",
+      "policy": "current",
+      "seed": 102
+    },
+    {
+      "id": "current-103",
+      "policy": "current",
+      "seed": 103
+    },
+    {
+      "id": "history-103",
+      "policy": "history",
+      "seed": 103
+    },
+    {
+      "id": "history-104",
+      "policy": "history",
+      "seed": 104
+    },
+    {
+      "id": "current-104",
+      "policy": "current",
+      "seed": 104
+    },
+    {
+      "id": "current-105",
+      "policy": "current",
+      "seed": 105
+    },
+    {
+      "id": "history-105",
+      "policy": "history",
+      "seed": 105
+    }
+  ],
+  "selected_policies": [
+    "baseline"
+  ],
+  "prior_estimated_usd": 0.0111104,
+  "max_estimated_usd": 3.0
+}

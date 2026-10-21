@@ -1,0 +1,48 @@
+{
+  "ai_use_disclosure": "Codex implemented this configuration under the student's direction; results are recorded separately from planned settings.",
+  "version": "pilot-v1-10-actions",
+  "scope": {
+    "game": "Catacomb II",
+    "level": 1,
+    "mode": "classic",
+    "instructor_agreement_record": null
+  },
+  "model": "gemini-3.5-flash-lite",
+  "location": "global",
+  "temperature": 0.2,
+  "thinking_level": "MINIMAL",
+  "max_output_tokens": 512,
+  "history_frames": 3,
+  "prompt": "prompts/player.txt",
+  "limits": {
+    "max_actions": 10,
+    "max_ticks": 2000,
+    "max_calls": 10,
+    "max_total_tokens": 1000000,
+    "max_seconds": 900,
+    "request_timeout_seconds": 30,
+    "max_consecutive_invalid": 2,
+    "max_estimated_usd": 0.3,
+    "input_token_reservation": 32768
+  },
+  "pricing": {
+    "input_usd_per_million": 0.3,
+    "output_usd_per_million": 2.5,
+    "checked_date": "2026-10-19",
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "policy": "Uncached global standard rates; response and thinking tokens count as output. Missing usage is charged at the full reservation. Estimates are not billing statements."
+  },
+  "suite": {
+    "repetitions": 5,
+    "seeds": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "max_estimated_usd": 3.0
+  },
+  "information_boundary": "Current PNG/status/ticks and, only in history mode, the last three permitted observation/action/intent records. No files, tools, source, maps, oracle routes, debug state or cross-episode memory.",
+  "failure_policy": "Invalid output leaves the game unchanged and consumes a call; two consecutive invalid outputs stop. Provider failures/timeouts stop without advancing the game. No hidden policy substitution or provider retry."
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "summary of executed checks, not a raw test log",
+  "date": "2026-10-12",
+  "platform": "Windows",
+  "http_integration_tests": {"command": "python tests/test_web.py", "passed": 8, "failed": 0, "last_run_seconds": 17.614},
+  "native_http_comparison": {"frames_compared": 7, "png_bytes_equal": true, "ticks_equal": true, "statuses_equal": true},
+  "browser_checks": {
+    "browser": "headless Chromium",
+    "routes": ["loopback HTTP", "public tunnel HTTPS"],
+    "desktop_viewport": [1440, 1120],
+    "mobile_viewport": [390, 844],
+    "access_key": "accepted and removed from address bar",
+    "keyboard": "movement and charge/release exercised",
+    "pause": "ticks stable after in-flight action completed",
+    "blur": "pauses game and clears held inputs",
+    "restart": "new first-level session loaded",
+    "mobile": "touch direction exercised; no horizontal overflow",
+    "javascript_errors": [],
+    "local_artifacts": "runs/web-browser-check/"
+  },
+  "final_remote_smoke": {
+    "health": 200,
+    "unauthenticated_game_api": 401,
+    "original_resource_url": 404,
+    "authenticated_game_api": 200,
+    "initial_tick": 1,
+    "after_south_eight_ticks": 9,
+    "frame_changed": true,
+    "session_closed": true
+  },
+  "engine_sha256_unchanged": "c9bda71676a73fae5fb3a13bff9bbbac41ae9c953eb66497f26969828cbdc098",
+  "resource_hashes_unchanged": ["SOUNDS.CA2", "EGACHARS.CA2", "EGAPICS.CA2", "LEVEL1.CA2"],
+  "limitations": ["No actual Mac/Safari or school-network test", "No audio streaming", "Network-paced simulation", "No full DOS fidelity evaluation", "No human peer-playtest evidence"]
+}

@@ -1,0 +1,23 @@
+{
+  "ai_use_disclosure": "Codex assembled this labeled clip from actual native-engine acceptance frames.",
+  "kind": "Scripted acceptance replay; not a live model run, human playtest or final presentation",
+  "source": "runs/m5-packaged-route-01/replay",
+  "decision_frames_per_second": 6,
+  "frames": 304,
+  "native_ticks": 612,
+  "status": "cleared",
+  "sha256": "9846194175351fadc05fd37989b70570cf06e40cc5c2ae12c683d78ff0e10128",
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 960,
+        "height": 640
+      }
+    ],
+    "format": {
+      "duration": "50.666667"
+    }
+  }
+}

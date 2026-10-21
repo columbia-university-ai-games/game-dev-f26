@@ -1,0 +1,11 @@
+{
+  "kind": "summary of executed regression checks",
+  "browser_regression_tests_passed": 6,
+  "public_script_matches_local": true,
+  "tap_duration_ms": 15,
+  "tap_sent_while_request_pending": true,
+  "single_request_at_a_time": true,
+  "delivered_direction": "south",
+  "frame_changed": true,
+  "javascript_errors": []
+}

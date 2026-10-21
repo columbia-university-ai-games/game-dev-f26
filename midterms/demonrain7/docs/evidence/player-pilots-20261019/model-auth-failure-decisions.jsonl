@@ -1,0 +1,1 @@
+{"decision": 0, "ticks_before": 1, "frame_sha256": "66cb99aefcce6efab9bf4e91aa9fe34c2a14f66c191898b3e2ef52a3db9f00ae", "policy": "history", "context": [{"status": "running", "ticks": 1, "width": 320, "height": 200, "png_sha256": "66cb99aefcce6efab9bf4e91aa9fe34c2a14f66c191898b3e2ef52a3db9f00ae"}], "error": "RefreshError", "termination": "provider_error"}

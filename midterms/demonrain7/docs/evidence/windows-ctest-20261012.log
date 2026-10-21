@@ -1,0 +1,55 @@
+Start testing: Oct 12 17:46 东部夏令时
+----------------------------------------------------------
+1/3 Testing: agent_protocol
+1/3 Test: agent_protocol
+Command: "D:/CODE/codes/Course_AI_Game/catacomb-midterm/build/test_agent_protocol.exe"
+Directory: D:/CODE/codes/Course_AI_Game/catacomb-midterm/build
+"agent_protocol" start time: Oct 12 17:46 东部夏令时
+Output:
+----------------------------------------------------------
+Agent protocol checks passed (allowed controls, strict bounds, atomic rejection).
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"agent_protocol" end time: Oct 12 17:46 东部夏令时
+"agent_protocol" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: game_rules_and_observation_boundary
+2/3 Test: game_rules_and_observation_boundary
+Command: "D:/CODE/codes/Course_AI_Game/catacomb-midterm/build/test_game_rules.exe"
+Directory: D:/CODE/codes/Course_AI_Game/catacomb-midterm/build
+"game_rules_and_observation_boundary" start time: Oct 12 17:46 东部夏令时
+Output:
+----------------------------------------------------------
+Real rule checks passed: key pickup, locked door, key consumption, wall collision, death, level exit, pixel-only observation.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"game_rules_and_observation_boundary" end time: Oct 12 17:46 东部夏令时
+"game_rules_and_observation_boundary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: python_interface
+3/3 Test: python_interface
+Command: "D:/CODE/Env/miniconda/python.exe" "-m" "unittest" "discover" "-s" "D:/CODE/codes/Course_AI_Game/catacomb-midterm/tests" "-p" "test_interface.py"
+Directory: D:/CODE/codes/Course_AI_Game/catacomb-midterm
+"python_interface" start time: Oct 12 17:46 东部夏令时
+Output:
+----------------------------------------------------------
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.021s
+
+OK
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"python_interface" end time: Oct 12 17:46 东部夏令时
+"python_interface" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 12 17:46 东部夏令时

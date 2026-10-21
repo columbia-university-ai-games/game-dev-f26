@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "version": "situations-v2",
+  "declared_on": "2026-10-21",
+  "level": 1,
+  "evidence": "Observed ordinary-interface replay of the original level-one rules. Starts use legal control prefixes only; no world edits. The fixture was discovered with privileged read-only developer state and is evaluator-only.",
+  "objective": "Leave the original first level alive through any original exit.",
+  "score": {
+    "cleared": 1,
+    "otherwise": 0,
+    "meaning": "Binary level completion, not the original HUD points."
+  },
+  "seed_policy": "Original engine starts are deterministic; the seed controls policy/provider variation, not a new map.",
+  "limits": {
+    "max_actions": 80,
+    "max_player_ticks": 2000
+  },
+  "route": {
+    "path": "config/acceptance-route.json",
+    "sha256": "6bceac781dbf719e0f0d4b15a31356b226110148b7e045bd1f60434e05fecff0",
+    "hash_format": "canonical-json-v1"
+  },
+  "resources_sha256": {
+    "SOUNDS.CA2": "6ce4ab7497c8c70b375b0e882835a6b86fe61751b77cb05af54bd542dcccd423",
+    "EGACHARS.CA2": "53a029112aa856c619e16f76ccde31388b7fc8ffeaf5192a0de598324f34bd5b",
+    "EGAPICS.CA2": "d0584aea535eaabc23e9bda56c1d96755720faf58d64c51b1eec142c18dececa",
+    "LEVEL1.CA2": "8e2bd5ed2a137d9440892a9788bf3e20f44226bbc36f53a317c3cd096eabf184"
+  },
+  "situations": [
+    {
+      "id": "s1-entrance",
+      "split": "development",
+      "description": "Original level-one entrance with fresh inventory.",
+      "preparation_actions": 0,
+      "expected_native_ticks": 1,
+      "expected_pixels_sha256": "8ec52240e7a9917dd3d07a5d6931498044621f3b662ecd38475a8c7091e5db83"
+    },
+    {
+      "id": "s2-clearing",
+      "split": "held_out",
+      "description": "Reachable clearing with visible enemies and collected resources.",
+      "preparation_actions": 64,
+      "expected_native_ticks": 129,
+      "expected_pixels_sha256": "05fffe34220cc8f4e186997d028ed79d73cc11db3970e3506efad12f254c3458"
+    },
+    {
+      "id": "s3-door",
+      "split": "held_out",
+      "description": "Reachable locked-door approach with its naturally accumulated inventory.",
+      "preparation_actions": 264,
+      "expected_native_ticks": 529,
+      "expected_pixels_sha256": "b5a700bfac4ca507a8c8262f387a54a8a05c278c90fabd77430b3cc545de0739"
+    }
+  ]
+}

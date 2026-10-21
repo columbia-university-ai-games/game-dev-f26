@@ -1,0 +1,9 @@
+[project]
+name = "catacomb-midterm"
+version = "0.2.0"
+description = "Bounded Catacomb II reconstruction and screenshot-only player evaluation"
+requires-python = ">=3.11"
+dependencies = ["google-genai==2.23.0", "Pillow==11.3.0"]
+
+[tool.uv]
+package = false

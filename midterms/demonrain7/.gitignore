@@ -1,0 +1,17 @@
+.claude/
+.DS_Store
+build*/
+.tools/
+data/
+runs/
+*.CA2
+*.ca2
+*.exe
+*.dll
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/

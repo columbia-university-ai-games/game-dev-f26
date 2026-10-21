@@ -1,0 +1,9 @@
+{"protocol": 1, "status": "running", "ticks": 1, "width": 320, "height": 200, "command": null, "frame": "00000.png", "response_seconds": 0.3933087000041269}
+{"protocol": 1, "status": "running", "ticks": 33, "width": 320, "height": 200, "command": "step 2 0 0 0 0 0 32", "frame": "00001.png", "response_seconds": 0.9502411999856122}
+{"protocol": 1, "status": "running", "ticks": 65, "width": 320, "height": 200, "command": "step 2 0 0 0 0 0 32", "frame": "00002.png", "response_seconds": 0.9527097000391223}
+{"protocol": 1, "status": "running", "ticks": 81, "width": 320, "height": 200, "command": "step 1 0 0 0 0 0 16", "frame": "00003.png", "response_seconds": 0.5035754999844357}
+{"protocol": 1, "status": "running", "ticks": 113, "width": 320, "height": 200, "command": "step 8 1 0 0 0 0 32", "frame": "00004.png", "response_seconds": 0.9469424999551848}
+{"protocol": 1, "status": "running", "ticks": 121, "width": 320, "height": 200, "command": "step 8 0 0 0 0 0 8", "frame": "00005.png", "response_seconds": 0.25551110005471855}
+{"protocol": 1, "status": "running", "ticks": 129, "width": 320, "height": 200, "command": "step 8 0 0 0 0 1 8", "frame": "00006.png", "response_seconds": 0.258640399959404}
+{"protocol": 1, "status": "running", "ticks": 161, "width": 320, "height": 200, "command": "step 2 1 0 0 0 0 32", "frame": "00007.png", "response_seconds": 0.9519609000417404}
+{"protocol": 1, "status": "running", "ticks": 177, "width": 320, "height": 200, "command": "step 8 0 0 0 0 0 16", "frame": "00008.png", "response_seconds": 0.48801149998325855}

@@ -1,0 +1,12 @@
+test_class_values_and_defaults (__main__.DebugTests.test_class_values_and_defaults) ... ok
+test_default_process_rejects_debug_commands (__main__.DebugTests.test_default_process_rejects_debug_commands) ... ok
+test_freeze_spawn_edit_remove_and_tile_paint (__main__.DebugTests.test_freeze_spawn_edit_remove_and_tile_paint) ... ok
+test_noclip_stays_inside_safe_camera_bounds (__main__.DebugTests.test_noclip_stays_inside_safe_camera_bounds) ... ok
+test_normal_pixels_match_previous_binary (__main__.DebugTests.test_normal_pixels_match_previous_binary) ... ok
+test_player_health_inventory_and_revival_do_not_advance_time (__main__.DebugTests.test_player_health_inventory_and_revival_do_not_advance_time) ... ok
+test_web_mode_boundary_and_debug_request_deduplication (__main__.DebugTests.test_web_mode_boundary_and_debug_request_deduplication) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 14.839s
+
+OK

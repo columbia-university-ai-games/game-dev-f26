@@ -1,0 +1,103 @@
+{
+  "ai_use_disclosure": "On October 12, 2026, Codex prepared this configuration record from the implemented interface and observed tests.",
+  "configuration_version": "week4-2026-10-12-v1",
+  "game": "Catacomb II / The Catacomb",
+  "upstream": "https://github.com/Blzut3/CatacombSDL",
+  "upstream_commit": "473d13629a2350e2498dd4a158e5bd0b36184160",
+  "engine": "C99 and SDL2; original source port adapted locally",
+  "scope": {
+    "level": 1,
+    "initial_state": "original fresh-game inventory and 13 HP",
+    "end_conditions": [
+      "death",
+      "any original level exit",
+      "operator stop",
+      "tick budget"
+    ],
+    "instructor_agreement_record": null
+  },
+  "player_interface": {
+    "protocol": 1,
+    "observation": [
+      "320x200 PNG",
+      "status",
+      "ticks",
+      "width",
+      "height"
+    ],
+    "audio_included": false,
+    "actions": [
+      "direction",
+      "fire",
+      "strafe",
+      "potion",
+      "bolt",
+      "nuke",
+      "ticks"
+    ],
+    "ticks_per_action": [
+      1,
+      32
+    ],
+    "consumables_per_action_max": 1,
+    "invalid_action": "error with no state advance",
+    "post_terminal_action": "error; observe remains available",
+    "player_reset": false,
+    "timing": "paused between actions; initial neutral tick is counted"
+  },
+  "harness": {
+    "default_headless": true,
+    "default_max_ticks": 10000,
+    "demo_max_ticks": 300,
+    "response_timeout_seconds": 30,
+    "response_timeout_behavior": "close process and report harness error, not game loss",
+    "resource_policy": "copy only selected-level data; exclude saves and settings",
+    "logs": [
+      "PNG frames",
+      "trace.jsonl",
+      "configuration.json",
+      "game-stderr.log"
+    ],
+    "per_run_hashes": [
+      "native executable",
+      "four original resources"
+    ]
+  },
+  "playing_model": {
+    "implemented": false,
+    "model_id": null,
+    "prompt": null,
+    "memory_policy": "not yet implemented; compare current-frame-only with bounded history",
+    "tool_policy": "proposed: observe and act only; no filesystem, shell, source or debugger",
+    "live_calls_in_week4_demo": 0,
+    "spending_budget": null
+  },
+  "production": {
+    "implementation": "Codex in this conversation; local C/Python code and docs",
+    "model_identifier": "not exposed in the local evidence record",
+    "reusable_skill": "skills/catacomb-validation/SKILL.md",
+    "review": "self-check performed; independent reviewer pending",
+    "human_decisions": [
+      "scope",
+      "fidelity acceptance",
+      "evaluation standards",
+      "release and submission"
+    ]
+  },
+  "evaluation": {
+    "native_tests": "ctest --test-dir build --output-on-failure",
+    "real_asset_tests": "python tests/test_live_game.py --exe build/catacomb.exe --data data/original",
+    "mac_executable": "build/catacomb",
+    "ci_workflow": ".github/workflows/checkpoint.yml",
+    "model_baseline_comparison": "pending",
+    "recorded_failure_modes": [
+      "Windows text-mode resource corruption",
+      "numeric option scan past NUL",
+      "warp buffer missing terminator",
+      "invalid action",
+      "missing assets",
+      "tick exhaustion"
+    ]
+  },
+  "last_updated": "2026-10-17"
+}

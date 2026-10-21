@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Catacomb II · Remote Play</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+  <script src="/debug.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Catacomb II home"><span class="brand-mark" aria-hidden="true">C</span> THE CATACOMB PROJECT</a>
+      <span class="private-tag"><span class="dot"></span> PRIVATE PLAY</span>
+    </header>
+    <section class="intro">
+      <div><p class="eyebrow" id="level-heading">1991 / LEVEL 01</p><h1>Catacomb <span>II</span></h1><p class="subtitle">Into the dungeon. Aim, charge, release.</p></div>
+      <div class="connection"><span id="connection-dot" class="dot"></span><span id="connection-status" role="status">Connecting</span></div>
+    </section>
+    <div class="layout">
+      <section class="game-panel" aria-label="Game display">
+        <div class="screen" id="screen" tabindex="0" aria-label="Game area: arrow keys to move, hold J to charge, release to fire, Escape to pause">
+          <img id="game-frame" width="320" height="200" alt="Native Catacomb II game display" hidden>
+          <div class="screen-grid" id="screen-grid"></div>
+          <div class="overlay" id="overlay">
+            <div class="gate-icon" aria-hidden="true">▥</div>
+            <p class="eyebrow">THE FIRST DESCENT</p>
+            <h2 id="overlay-title">The dungeon awaits</h2>
+            <p id="overlay-copy">Connect to begin your first level.</p>
+            <form id="access-form" hidden>
+              <label for="access-key">Access key</label>
+              <input id="access-key" type="password" autocomplete="off" placeholder="Paste your access key" required>
+              <button class="primary" type="submit">Connect <span aria-hidden="true">↗</span></button>
+            </form>
+            <button class="primary" id="start-button" disabled>Enter level 1 <span aria-hidden="true">↗</span></button>
+          </div>
+          <span class="screen-label" id="paused-label" hidden>Paused</span>
+        </div>
+        <div class="game-toolbar">
+          <div class="game-status"><span class="dot" id="game-dot"></span><span id="game-status">Ready to start</span><span class="separator">/</span><span id="tick-count">0 ticks</span></div>
+          <div class="toolbar-actions"><button id="pause-button" disabled>Pause</button><button id="restart-button" disabled>Restart</button><button id="debug-button" hidden>Debug panel</button><button id="fullscreen-button" aria-label="Expand game area">Expand ↗</button></div>
+        </div>
+        <p class="notice" id="notice" role="status">Once the game starts, click the screen to use the keyboard.</p>
+      </section>
+      <aside class="controls-panel">
+        <div class="panel-heading"><p class="eyebrow">HOW TO PLAY</p><h2>Controls</h2></div>
+        <div class="control-row"><span>Move</span><span class="key-group"><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></span></div>
+        <p class="control-note">W A S D also works</p>
+        <div class="control-row"><span>Charge / release to fire</span><kbd>J</kbd></div>
+        <div class="control-row"><span>Strafe without turning</span><kbd>Shift</kbd></div>
+        <div class="control-row"><span>Healing potion</span><kbd>P</kbd></div>
+        <div class="control-row"><span>Bolt spell</span><kbd>B</kbd></div>
+        <div class="control-row"><span>Nuke spell</span><kbd>N</kbd></div>
+        <div class="control-row last"><span>Pause / resume</span><kbd>Esc</kbd></div>
+        <div class="tip"><span class="tip-marker">↳</span><p>Release at full charge for a larger shot. Look for keys, doors, and breakable walls as you explore.</p></div>
+        <div class="session-info"><span>Native resolution</span><strong>320 × 200</strong><span>Response time</span><strong id="latency">—</strong></div>
+      </aside>
+    </div>
+    <section class="touch-controls" aria-label="On-screen controls">
+      <div class="dpad">
+        <button data-hold="northwest" aria-label="Up left">↖</button><button data-hold="north" aria-label="Up">↑</button><button data-hold="northeast" aria-label="Up right">↗</button>
+        <button data-hold="west" aria-label="Left">←</button><span class="dpad-center" aria-hidden="true">·</span><button data-hold="east" aria-label="Right">→</button>
+        <button data-hold="southwest" aria-label="Down left">↙</button><button data-hold="south" aria-label="Down">↓</button><button data-hold="southeast" aria-label="Down right">↘</button>
+      </div>
+      <div class="touch-actions"><button class="fire-button" data-hold="fire">Hold to charge<span>Release to fire</span></button><button data-hold="strafe">Strafe</button><div class="spells"><button data-item="potion">Potion P</button><button data-item="bolt">Bolt B</button><button data-item="nuke">Nuke N</button></div></div>
+    </section>
+    <section id="debug-panel" class="debug-panel" hidden aria-label="Developer debug panel">
+      <div class="debug-heading"><div><p class="eyebrow">DEVELOPER WORKBENCH</p><h2>Explore the rules.</h2></div><span id="debug-mode-label" class="debug-badge">Normal mode</span></div>
+      <p class="debug-intro">Edit values and inspect the full map in a debug session. Changes apply to this session; original resource files stay intact.</p>
+      <div class="debug-start">
+        <label>Level <select id="debug-level" aria-label="Debug level"></select></label>
+        <label>Session tick limit <input id="debug-budget" type="number" min="1" max="1000000" value="20000"></label>
+        <button id="debug-enable">Start debug session</button><button id="debug-normal">Restart with original rules</button><button id="debug-refresh" disabled>Read current values</button>
+      </div>
+      <p id="debug-message" role="status" class="debug-message">Debug mode starts a new game. Pause to make changes, then resume to see the result.</p>
+      <fieldset id="debug-fields" disabled>
+        <div class="debug-grid">
+          <section class="debug-card">
+            <h3>Player &amp; inventory</h3>
+            <form id="debug-player-form"><div id="debug-player-fields" class="number-grid"></div><button type="submit">Apply player values</button></form>
+            <p class="field-help">Original HP is 13; the debug limit is 127. The health bar still tops out at full. Set HP above zero to revive. Potions restore HP to 13. Directions: 0 up, 1 right, 2 down, 3 left. Toggles: 0 off, 1 on.</p>
+          </section>
+          <section class="debug-card">
+            <h3>Toggles &amp; time</h3>
+            <form id="debug-flags-form">
+              <label class="check"><input id="debug-freeze-enemies" type="checkbox">Freeze enemies</label>
+              <label class="check"><input id="debug-freeze-shots" type="checkbox">Freeze projectiles</label>
+              <label class="check"><input id="debug-noclip" type="checkbox">Walk through walls (also skips pickups and exit triggers)</label>
+              <button type="submit">Apply toggles</button>
+            </form>
+            <div class="number-grid two">
+              <label>Ticks per action<input id="debug-ticks" type="number" min="1" max="32" value="4"></label>
+              <label>Step direction<select id="debug-step-direction"><option value="none">Stay still</option><option value="north">Up</option><option value="south">Down</option><option value="west">Left</option><option value="east">Right</option></select></label>
+            </div>
+            <label class="check"><input id="debug-step-fire" type="checkbox">Hold fire during step</label><button id="debug-step">Advance one step</button>
+            <p class="field-help">Step while paused. More ticks advance the game further per input. Network speed still affects playback speed.</p>
+            <div class="button-row"><button id="debug-clear-enemies">Clear all enemies</button><button id="debug-clear-shots">Clear projectiles</button></div>
+          </section>
+          <section class="debug-card">
+            <h3>Enemy &amp; projectile values</h3>
+            <form id="debug-class-form">
+              <label>Object type<select id="debug-class"></select></label><div id="debug-class-fields" class="number-grid two"></div>
+              <label class="check"><input id="debug-apply-hp" type="checkbox">Apply HP to existing objects of this type</label><button type="submit">Apply type values</button>
+            </form>
+            <p class="field-help">Action threshold, 0–256: 0 prevents actions; 256 passes every action check. Cooldowns still apply. Base HP affects new objects; damage and points apply immediately.</p>
+            <button id="debug-defaults">Reset type values &amp; toggles</button>
+          </section>
+          <section class="debug-card">
+            <h3>Spawn &amp; edit objects</h3>
+            <form id="debug-spawn-form">
+              <label>Enemy to spawn<select id="debug-spawn-class"></select></label>
+              <div class="number-grid two"><label>X<input id="debug-spawn-x" type="number" min="1" max="62" value="20"></label><label>Y<input id="debug-spawn-y" type="number" min="1" max="62" value="20"></label></div>
+              <button type="submit">Spawn at selected position</button>
+            </form>
+            <p class="field-help">The enemy needs enough clear floor space. Click the map to set coordinates.</p>
+            <form id="debug-object-form">
+              <label>Existing object<select id="debug-object"></select></label><div id="debug-object-fields" class="number-grid two"></div>
+              <div class="button-row"><button id="debug-object-apply" type="submit">Apply object values</button><button id="debug-remove" type="button">Remove object</button></div>
+            </form>
+          </section>
+          <section class="debug-card map-card">
+            <div><h3>Full map &amp; tile editor</h3><p class="field-help">Debug only: includes information beyond the game screen. Click a tile to select it. The outer boundary is locked.</p></div>
+            <canvas id="debug-map" width="512" height="512" aria-label="Full map; click to select a tile"></canvas>
+            <p class="map-legend"><span>Green: floor</span><span>Gray: wall</span><span>Orange: breakable wall</span><span>Yellow: item / door</span><span>Red: object</span><span>White: player</span></p>
+          </section>
+          <section class="debug-card">
+            <h3>Tiles &amp; presets</h3>
+            <form id="debug-tile-form">
+              <div class="number-grid two"><label>X<input id="debug-tile-x" type="number" min="1" max="62" value="20"></label><label>Y<input id="debug-tile-y" type="number" min="1" max="62" value="20"></label></div>
+              <label>Tile type<select id="debug-tile-kind"></select></label><p id="debug-tile-current" class="field-help">Click the map to select a tile.</p>
+              <div class="button-row"><button type="submit">Replace tile</button><button type="button" id="debug-teleport">Teleport player here</button></div>
+            </form>
+            <p class="field-help">Place keys, doors, potions, treasure, or breakable walls. Teleporting requires clear floor space unless wall bypass is enabled.</p>
+            <hr><h3>Save a parameter preset</h3>
+            <div class="button-row"><button id="debug-export">Export JSON</button><button id="debug-import">Import JSON</button><input id="debug-import-file" type="file" accept=".json,application/json" hidden></div>
+            <p class="field-help">Presets include player, inventory, type values, and toggles. They do not save the map, objects, or game progress. Changes are also written to a local debug log.</p>
+          </section>
+        </div>
+      </fieldset>
+    </section>
+    <footer><span id="play-mode-footer">Normal mode · Original rules</span><p>The game runs in the background on Windows. Browser play has no audio. Pausing or switching tabs stops play; connection speed affects the pace.</p></footer>
+  </main>
+</body>
+</html>
