@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "declaredAt": "2026-10-22",
+  "status": "declared-before-first-engine-and-prompt-tuning",
+  "development": [{"id":"dev-a","scenario":"A","seed":101},{"id":"dev-b","scenario":"B","seed":202},{"id":"dev-c","scenario":"C","seed":303}],
+  "heldOut": [{"id":"coast-711","scenario":"A","seed":711},{"id":"reef-823","scenario":"B","seed":823},{"id":"pressure-947","scenario":"C","seed":947}],
+  "conditions": ["baseline","model-current","model-history"],
+  "liveRepetitionsPerCase": 2,
+  "historySteps": 6,
+  "limits": {"maxCallsPerEpisode":85,"callTimeoutMs":30000,"maxInvalidActions":3,"maxOutputTokens":200},
+  "primaryMetric":"objective_completed_and_returned",
+  "secondaryMetrics":["returned","deliveredValue","hull","steps","invalidActions","calls","fallbacks","latencyMs","inputTokens","outputTokens","estimatedCost"],
+  "freezePolicy":"Freeze game commit, config and prompt before held-out trials. Any subsequent tuning using their results consumes the holdout; register replacement cases. No superiority or significance is assumed."
+}

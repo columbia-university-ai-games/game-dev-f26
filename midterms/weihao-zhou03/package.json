@@ -1,0 +1,13 @@
+{
+  "name": "echo-fishery", "version": "0.1.0", "private": true, "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "tsc --noEmit",
+    "evaluate": "tsx src/runner/cli.ts",
+    "replay": "tsx src/runner/cli.ts --replay"
+  },
+  "dependencies": { "three": "^0.180.0" },
+  "devDependencies": { "@types/node": "^24.0.0", "@types/three": "^0.180.0", "tsx": "^4.20.0", "typescript": "^5.9.0", "vite": "^7.1.0" }
+}

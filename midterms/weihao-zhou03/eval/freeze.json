@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-23T03:31:15.839863+00:00",
+  "rulesCommit": "ae84cdc11e4e7e8c11e6d76a901439b6e3af02f2",
+  "sourceFingerprint": "b55b57129d7cd23b98f3e8fb9cc0f1f21ac69758d26b2b590e3b6e32f994b04d",
+  "baselineVersion": "echo-window-4",
+  "promptVersion": "echo-public-player-2",
+  "model": "gpt-6.1-sol",
+  "heldOutExposed": false,
+  "fileHashes": {
+    "eval/suite.json": "1b6af80a567dc19bf7f967375db138e885b011ae9f7e03fed7b8dac4ff03fb7e",
+    "package-lock.json": "878c1622febc521470d16f4da137528627b55c513293c8c9255946f77e9fda3b",
+    "src/core/game.ts": "8efb80130f99b02fc668d5d329624a0f3619acfc8dad0e6a1201e1ce4df73504",
+    "src/core/math.ts": "f9d02150503aa7484e655e5117095743e3118d4b7296d916d0a8c902710783b9",
+    "src/core/simulation.ts": "cc78b341874eac85bb6156b5fea79f2f0a76040689e37d8406d87bcfb7b3c63b",
+    "src/core/types.ts": "b9c57427490a5f4425bb883a83076283621c1b3f438f932a590e01d6e3bedce9",
+    "src/players/baseline.ts": "00948bf725b107be4423a8235265cad19df3f6b2c96fa7188d8498999ce1b31a",
+    "src/players/model.ts": "196c87f9395ea06e74615431632db37f80b7973c744c071391bf8d5086c68007",
+    "src/runner/cli.ts": "90f9bea45ff5a69a0f5cceb3c7446ab353330a9ebc9f2b63a1865e1234a7d2fb",
+    "src/runner/episode.ts": "89bac232a7ce322ab176a1b9a481155334c84e6a359c25278aa39580f449eb72"
+  },
+  "policy": "No rule/observation/player/runner/config/prompt tuning after first reserved-case run. Documentation/results and presentation-only changes may be made, with independent review of parity."
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "label": "deterministic-baseline",
+  "createdAt": "2026-10-23T03:20:24.412Z",
+  "suite": "dev",
+  "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty",
+  "results": [
+    {
+      "player": "baseline",
+      "scenario": "A",
+      "seed": 101,
+      "caseId": "dev-a",
+      "repetition": 1,
+      "live": false,
+      "outcome": {
+        "terminal": true,
+        "reason": "returned",
+        "returned": true,
+        "success": true,
+        "delivered": [
+          {
+            "species": "silver-bell",
+            "value": 12
+          },
+          {
+            "species": "silver-bell",
+            "value": 12
+          }
+        ],
+        "score": 64
+      },
+      "steps": 20,
+      "invalidActions": 0,
+      "calls": 0,
+      "failedCalls": 0,
+      "fallbacks": 0,
+      "latencyMs": 0,
+      "inputTokens": null,
+      "outputTokens": null,
+      "estimatedCost": null,
+      "deliveredValue": 24,
+      "hull": 3,
+      "runnerStop": null,
+      "model": null,
+      "promptVersion": "echo-public-player-1",
+      "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty",
+      "trace": "2026-10-23T03-20-24-311Z-baseline-dev-a-r1.json"
+    },
+    {
+      "player": "baseline",
+      "scenario": "B",
+      "seed": 202,
+      "caseId": "dev-b",
+      "repetition": 1,
+      "live": false,
+      "outcome": {
+        "terminal": true,
+        "reason": "returned",
+        "returned": true,
+        "success": false,
+        "delivered": [],
+        "score": 0
+      },
+      "steps": 73,
+      "invalidActions": 0,
+      "calls": 0,
+      "failedCalls": 0,
+      "fallbacks": 0,
+      "latencyMs": 0,
+      "inputTokens": null,
+      "outputTokens": null,
+      "estimatedCost": null,
+      "deliveredValue": 0,
+      "hull": 3,
+      "runnerStop": null,
+      "model": null,
+      "promptVersion": "echo-public-player-1",
+      "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty",
+      "trace": "2026-10-23T03-20-24-311Z-baseline-dev-b-r1.json"
+    },
+    {
+      "player": "baseline",
+      "scenario": "C",
+      "seed": 303,
+      "caseId": "dev-c",
+      "repetition": 1,
+      "live": false,
+      "outcome": {
+        "terminal": true,
+        "reason": "returned",
+        "returned": true,
+        "success": true,
+        "delivered": [
+          {
+            "species": "silver-bell",
+            "value": 12
+          },
+          {
+            "species": "reefback",
+            "value": 22
+          }
+        ],
+        "score": 74
+      },
+      "steps": 29,
+      "invalidActions": 0,
+      "calls": 0,
+      "failedCalls": 0,
+      "fallbacks": 0,
+      "latencyMs": 0,
+      "inputTokens": null,
+      "outputTokens": null,
+      "estimatedCost": null,
+      "deliveredValue": 34,
+      "hull": 2,
+      "runnerStop": null,
+      "model": null,
+      "promptVersion": "echo-public-player-1",
+      "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty",
+      "trace": "2026-10-23T03-20-24-311Z-baseline-dev-c-r1.json"
+    }
+  ]
+}

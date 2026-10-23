@@ -1,0 +1,6412 @@
+{
+  "schemaVersion": 1,
+  "kind": "public-episode",
+  "startedAt": "2026-10-23T03:20:24.411Z",
+  "config": {
+    "player": "baseline",
+    "seed": 303,
+    "scenario": "C",
+    "caseId": "dev-c",
+    "repetition": 1,
+    "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty",
+    "maxSteps": 100,
+    "maxInvalidActions": 3
+  },
+  "versions": {
+    "baseline": "echo-window-2",
+    "prompt": "echo-public-player-1"
+  },
+  "steps": [
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 0,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 12,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 3,
+          "cargo": []
+        },
+        "remaining": 54,
+        "contacts": [],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW",
+          "return"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "ping:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 1,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 12,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 3,
+          "cargo": []
+        },
+        "remaining": 53,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 2.2,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 2.2,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "sonar",
+            "text": "强脉冲照亮更远海域，也会惊动水下的听者。",
+            "position": {
+              "x": 12,
+              "y": 54
+            },
+            "intensity": 7
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW",
+          "return"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 2,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 16,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 3,
+          "cargo": []
+        },
+        "remaining": 52,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 2.9,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 2.9,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 16,
+              "y": 54
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW",
+          "return"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 3,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 20,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 3,
+          "cargo": []
+        },
+        "remaining": 51,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 3.5999999999999996,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 3.5999999999999996,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 20,
+              "y": 54
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 4,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 3,
+          "cargo": []
+        },
+        "remaining": 50,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 4.3,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 4.3,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "beacon:chime:2"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 5,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 49,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 5,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 5,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 2,
+            "life": 7,
+            "active": false
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "deploy",
+            "text": "声标已留下，2步后发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "cast:NE"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 6,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "NE",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 48,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 5.699999999999999,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 5.699999999999999,
+            "hint": "fish-school",
+            "species": "reefback"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 1,
+            "life": 7,
+            "active": false
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": null,
+        "events": [
+          {
+            "kind": "empty_cast",
+            "text": "浮漂没有动静。这一竿消耗了时间。",
+            "position": {
+              "x": 29.657,
+              "y": 48.343
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "ping:weak"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 7,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "NE",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 47,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 6.3999999999999995,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 6.3999999999999995,
+            "hint": "fish-school",
+            "species": "reefback"
+          },
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 3.5,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 3.5,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 5.7,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 7,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "distant"
+        },
+        "events": [
+          {
+            "kind": "sonar",
+            "text": "弱脉冲已返回。光点是刚才的位置，不是实时追踪。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 2.2
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "cast:W"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 8,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 46,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 7.1,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 7.1,
+            "hint": "fish-school",
+            "species": "reefback"
+          },
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 4.199999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 4.199999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 6.4,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 6,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "silver-bell",
+          "progress": 0,
+          "tension": 15,
+          "cue": "tired",
+          "lineEnd": {
+            "x": 20.661,
+            "y": 53.195
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "distant"
+        },
+        "events": [
+          {
+            "kind": "hooked",
+            "text": "银铃鱼上钩。第一口挣扎会在下一次操作时结算。",
+            "position": {
+              "x": 20.661,
+              "y": 53.195
+            }
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 9,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 45,
+        "contacts": [
+          {
+            "id": "echo-0-0",
+            "tick": 0,
+            "position": {
+              "x": 28.532,
+              "y": 51.122
+            },
+            "uncertainty": 7.8,
+            "hint": "fish-school",
+            "species": "silver-bell"
+          },
+          {
+            "id": "echo-0-1",
+            "tick": 0,
+            "position": {
+              "x": 48.179,
+              "y": 46.446
+            },
+            "uncertainty": 7.8,
+            "hint": "fish-school",
+            "species": "reefback"
+          },
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 4.8999999999999995,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 4.8999999999999995,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 7.1,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 5,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "silver-bell",
+          "progress": 38,
+          "tension": 29,
+          "cue": "pulling",
+          "lineEnd": {
+            "x": 20.661,
+            "y": 53.195
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "distant"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 5.3999999999999995
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:steady"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 10,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 44,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 5.6,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 5.6,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 7.8,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 4,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "silver-bell",
+          "progress": 58,
+          "tension": 37,
+          "cue": "pulling",
+          "lineEnd": {
+            "x": 20.661,
+            "y": 53.195
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "稳收：低声接近收获。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 2.4
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 11,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": []
+        },
+        "remaining": 43,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 6.3,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 6.3,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 8.5,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 3,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "silver-bell",
+          "progress": 96,
+          "tension": 62,
+          "cue": "pulling",
+          "lineEnd": {
+            "x": 20.661,
+            "y": 53.195
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 5.8
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 12,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24,
+            "y": 54
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 42,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 6.999999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 6.999999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 9.2,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 2,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": {
+          "start": {
+            "x": 30.96,
+            "y": 50.687
+          },
+          "end": {
+            "x": 21.291,
+            "y": 55.289
+          },
+          "width": 3.5,
+          "resolvesIn": 1
+        },
+        "warning": {
+          "bearing": "NE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 5.8
+          },
+          {
+            "kind": "caught",
+            "text": "银铃鱼已入船舱。带回港口才算交付。",
+            "position": {
+              "x": 24,
+              "y": 54
+            }
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          },
+          {
+            "kind": "windup",
+            "text": "水面形成一道冲撞通道。下一次行动后，它将掠过这里。",
+            "position": {
+              "x": 24,
+              "y": 54
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:NW:rush"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 13,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 19.05,
+            "y": 49.05
+          },
+          "heading": "NW",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 41,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 7.699999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 7.699999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 9.899999999999999,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-0",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 1,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "SE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "急行：离开更快，也留下更响的航迹。",
+            "position": {
+              "x": 19.05,
+              "y": 49.05
+            },
+            "intensity": 3.5
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 24,
+              "y": 54
+            },
+            "intensity": 3
+          },
+          {
+            "kind": "attack_missed",
+            "text": "冲撞擦过预告水域。你争取到了脱离窗口。",
+            "position": {
+              "x": 21.291,
+              "y": 55.289
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "ping:weak"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 14,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 19.05,
+            "y": 49.05
+          },
+          "heading": "NW",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 40,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 8.399999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 8.399999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 10.6,
+            "hint": "large-anomaly"
+          },
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 3.5,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 5.7,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "SE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "sonar",
+            "text": "弱脉冲已返回。光点是刚才的位置，不是实时追踪。",
+            "position": {
+              "x": 19.05,
+              "y": 49.05
+            },
+            "intensity": 2.2
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 15,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 23.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 39,
+        "contacts": [
+          {
+            "id": "echo-6-0",
+            "tick": 6,
+            "position": {
+              "x": 18.499,
+              "y": 52.152
+            },
+            "uncertainty": 9.1,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-1",
+            "tick": 6,
+            "position": {
+              "x": 45.463,
+              "y": 47.784
+            },
+            "uncertainty": 9.1,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-6-2",
+            "tick": 6,
+            "position": {
+              "x": 46.405,
+              "y": 42.807
+            },
+            "uncertainty": 11.3,
+            "hint": "large-anomaly"
+          },
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 4.199999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 6.4,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "SE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 23.05,
+              "y": 49.05
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 16,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 27.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 38,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 4.8999999999999995,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 7.1,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": {
+          "start": {
+            "x": 25.542,
+            "y": 53.266
+          },
+          "end": {
+            "x": 28.06,
+            "y": 46.225
+          },
+          "width": 3.5,
+          "resolvesIn": 1
+        },
+        "warning": {
+          "bearing": "S",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 27.05,
+              "y": 49.05
+            },
+            "intensity": 0.55
+          },
+          {
+            "kind": "windup",
+            "text": "水面形成一道冲撞通道。下一次行动后，它将掠过这里。",
+            "position": {
+              "x": 27.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:W:rush"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 17,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 20.05,
+            "y": 49.05
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 37,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 5.6,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 7.8,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "急行：离开更快，也留下更响的航迹。",
+            "position": {
+              "x": 20.05,
+              "y": 49.05
+            },
+            "intensity": 3.5
+          },
+          {
+            "kind": "attack_missed",
+            "text": "冲撞擦过预告水域。你争取到了脱离窗口。",
+            "position": {
+              "x": 28.06,
+              "y": 46.225
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 18,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 24.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 36,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 6.3,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 8.5,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 24.05,
+              "y": 49.05
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:E:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 19,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 28.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 35,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 6.999999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 9.2,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "N",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 28.05,
+              "y": 49.05
+            },
+            "intensity": 0.55
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "ping:weak"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 20,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 28.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 34,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 7.699999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 9.899999999999999,
+            "hint": "large-anomaly"
+          },
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 3.5,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 5.7,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": {
+          "start": {
+            "x": 27.562,
+            "y": 47.616
+          },
+          "end": {
+            "x": 29.016,
+            "y": 51.89
+          },
+          "width": 3.5,
+          "resolvesIn": 1
+        },
+        "warning": {
+          "bearing": "N",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "sonar",
+            "text": "弱脉冲已返回。光点是刚才的位置，不是实时追踪。",
+            "position": {
+              "x": 28.05,
+              "y": 49.05
+            },
+            "intensity": 2.2
+          },
+          {
+            "kind": "windup",
+            "text": "水面形成一道冲撞通道。下一次行动后，它将掠过这里。",
+            "position": {
+              "x": 28.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:W:rush"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 21,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 2,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 33,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 8.399999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 10.6,
+            "hint": "large-anomaly"
+          },
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 4.199999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 6.4,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "急行：离开更快，也留下更响的航迹。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3.5
+          },
+          {
+            "kind": "attack_missed",
+            "text": "冲撞擦过预告水域。你争取到了脱离窗口。",
+            "position": {
+              "x": 29.016,
+              "y": 51.89
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "beacon:chime:2"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 22,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "W",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 32,
+        "contacts": [
+          {
+            "id": "echo-13-0",
+            "tick": 13,
+            "position": {
+              "x": 37.42,
+              "y": 48.398
+            },
+            "uncertainty": 9.1,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-13-1",
+            "tick": 13,
+            "position": {
+              "x": 26.542,
+              "y": 52.266
+            },
+            "uncertainty": 11.3,
+            "hint": "large-anomaly"
+          },
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 4.8999999999999995,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 7.1,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 2,
+            "life": 7,
+            "active": false
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "deploy",
+            "text": "声标已留下，2步后发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "cast:E"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 23,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 31,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 5.6,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 7.8,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 1,
+            "life": 7,
+            "active": false
+          }
+        ],
+        "fishing": {
+          "species": "reefback",
+          "progress": 0,
+          "tension": 15,
+          "cue": "tired",
+          "lineEnd": {
+            "x": 28.05,
+            "y": 49.05
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "hooked",
+            "text": "礁背鱼上钩。第一口挣扎会在下一次操作时结算。",
+            "position": {
+              "x": 28.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 24,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 30,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 6.3,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 8.5,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 7,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "reefback",
+          "progress": 38,
+          "tension": 29,
+          "cue": "pulling",
+          "lineEnd": {
+            "x": 28.05,
+            "y": 49.05
+          }
+        },
+        "threat": null,
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 5.3999999999999995
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 25,
+        "phase": "FISHING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 3,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            }
+          ]
+        },
+        "remaining": 29,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 6.999999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 9.2,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 6,
+            "active": true
+          }
+        ],
+        "fishing": {
+          "species": "reefback",
+          "progress": 76,
+          "tension": 54,
+          "cue": "pulling",
+          "lineEnd": {
+            "x": 28.05,
+            "y": 49.05
+          }
+        },
+        "threat": {
+          "start": {
+            "x": 26.002,
+            "y": 50.815
+          },
+          "end": {
+            "x": 18.224,
+            "y": 48.043
+          },
+          "width": 3.5,
+          "resolvesIn": 1
+        },
+        "warning": {
+          "bearing": "E",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 5.8
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3
+          },
+          {
+            "kind": "windup",
+            "text": "水面形成一道冲撞通道。下一次行动后，它将掠过这里。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "reel:steady",
+          "reel:strong",
+          "reel:slack",
+          "evade:N",
+          "evade:NE",
+          "evade:E",
+          "evade:SE",
+          "evade:S",
+          "evade:SW",
+          "evade:W",
+          "evade:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "reel:strong"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 26,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 21.05,
+            "y": 49.05
+          },
+          "heading": "E",
+          "hull": 2,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            },
+            {
+              "species": "reefback",
+              "value": 22
+            }
+          ]
+        },
+        "remaining": 28,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 7.699999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 9.899999999999999,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 5,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "W",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "reel",
+            "text": "强收：争取时间，挣扎声也更响。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 5.8
+          },
+          {
+            "kind": "caught",
+            "text": "礁背鱼已入船舱。带回港口才算交付。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            }
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3
+          },
+          {
+            "kind": "damage",
+            "text": "冲撞命中，船体受损。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            }
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:SW:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 27,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 18.222,
+            "y": 51.878
+          },
+          "heading": "SW",
+          "hull": 2,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            },
+            {
+              "species": "reefback",
+              "value": 22
+            }
+          ]
+        },
+        "remaining": 27,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 8.399999999999999,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 10.6,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 4,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 18.222,
+              "y": 51.878
+            },
+            "intensity": 0.55
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "move:W:quiet"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    },
+    {
+      "observation": {
+        "schemaVersion": 1,
+        "tick": 28,
+        "phase": "EXPLORING",
+        "scenario": {
+          "id": "C",
+          "name": "最后一竿星光",
+          "subtitle": "夜将尽，已得的渔获值得保护。",
+          "budget": 54,
+          "quota": 2
+        },
+        "map": {
+          "width": 100,
+          "height": 70,
+          "harbor": {
+            "x": 12,
+            "y": 54
+          },
+          "harborRadius": 5,
+          "reefs": [
+            [
+              {
+                "x": 34,
+                "y": 32
+              },
+              {
+                "x": 42,
+                "y": 32
+              },
+              {
+                "x": 46,
+                "y": 38
+              },
+              {
+                "x": 40,
+                "y": 45
+              },
+              {
+                "x": 34,
+                "y": 42
+              }
+            ],
+            [
+              {
+                "x": 62,
+                "y": 13
+              },
+              {
+                "x": 69,
+                "y": 11
+              },
+              {
+                "x": 75,
+                "y": 17
+              },
+              {
+                "x": 71,
+                "y": 23
+              },
+              {
+                "x": 65,
+                "y": 22
+              }
+            ],
+            [
+              {
+                "x": 72,
+                "y": 55
+              },
+              {
+                "x": 79,
+                "y": 51
+              },
+              {
+                "x": 85,
+                "y": 56
+              },
+              {
+                "x": 83,
+                "y": 62
+              },
+              {
+                "x": 75,
+                "y": 62
+              }
+            ]
+          ]
+        },
+        "boat": {
+          "position": {
+            "x": 14.222,
+            "y": 51.878
+          },
+          "heading": "W",
+          "hull": 2,
+          "maxHull": 3,
+          "beaconsLeft": 1,
+          "cargo": [
+            {
+              "species": "silver-bell",
+              "value": 12
+            },
+            {
+              "species": "reefback",
+              "value": 22
+            }
+          ]
+        },
+        "remaining": 26,
+        "contacts": [
+          {
+            "id": "echo-19-0",
+            "tick": 19,
+            "position": {
+              "x": 27.823,
+              "y": 51.629
+            },
+            "uncertainty": 9.1,
+            "hint": "fish-school"
+          },
+          {
+            "id": "echo-19-1",
+            "tick": 19,
+            "position": {
+              "x": 28.562,
+              "y": 46.616
+            },
+            "uncertainty": 11.3,
+            "hint": "large-anomaly"
+          }
+        ],
+        "beacons": [
+          {
+            "id": "beacon-1",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "profile": "chime",
+            "startsIn": 0,
+            "life": 3,
+            "active": true
+          }
+        ],
+        "fishing": null,
+        "threat": null,
+        "warning": {
+          "bearing": "NE",
+          "urgency": "near"
+        },
+        "events": [
+          {
+            "kind": "move",
+            "text": "低速航行。",
+            "position": {
+              "x": 14.222,
+              "y": 51.878
+            },
+            "intensity": 0.55
+          },
+          {
+            "kind": "beacon_sound",
+            "text": "轻鸣声标正在发声。",
+            "position": {
+              "x": 21.05,
+              "y": 49.05
+            },
+            "intensity": 3
+          }
+        ],
+        "legalActions": [
+          "wait",
+          "move:N:quiet",
+          "move:N:rush",
+          "move:NE:quiet",
+          "move:NE:rush",
+          "move:E:quiet",
+          "move:E:rush",
+          "move:SE:quiet",
+          "move:SE:rush",
+          "move:S:quiet",
+          "move:S:rush",
+          "move:SW:quiet",
+          "move:SW:rush",
+          "move:W:quiet",
+          "move:W:rush",
+          "move:NW:quiet",
+          "move:NW:rush",
+          "ping:weak",
+          "ping:strong",
+          "beacon:chime:0",
+          "beacon:chime:2",
+          "beacon:drone:0",
+          "beacon:drone:2",
+          "cast:N",
+          "cast:NE",
+          "cast:E",
+          "cast:SE",
+          "cast:S",
+          "cast:SW",
+          "cast:W",
+          "cast:NW",
+          "return"
+        ],
+        "outcome": {
+          "terminal": false,
+          "reason": null,
+          "returned": false,
+          "success": false,
+          "score": 0,
+          "delivered": []
+        }
+      },
+      "action": {
+        "id": "return"
+      },
+      "accepted": true,
+      "source": "baseline",
+      "calls": []
+    }
+  ],
+  "finalObservation": {
+    "schemaVersion": 1,
+    "tick": 29,
+    "phase": "TERMINAL",
+    "scenario": {
+      "id": "C",
+      "name": "最后一竿星光",
+      "subtitle": "夜将尽，已得的渔获值得保护。",
+      "budget": 54,
+      "quota": 2
+    },
+    "map": {
+      "width": 100,
+      "height": 70,
+      "harbor": {
+        "x": 12,
+        "y": 54
+      },
+      "harborRadius": 5,
+      "reefs": [
+        [
+          {
+            "x": 34,
+            "y": 32
+          },
+          {
+            "x": 42,
+            "y": 32
+          },
+          {
+            "x": 46,
+            "y": 38
+          },
+          {
+            "x": 40,
+            "y": 45
+          },
+          {
+            "x": 34,
+            "y": 42
+          }
+        ],
+        [
+          {
+            "x": 62,
+            "y": 13
+          },
+          {
+            "x": 69,
+            "y": 11
+          },
+          {
+            "x": 75,
+            "y": 17
+          },
+          {
+            "x": 71,
+            "y": 23
+          },
+          {
+            "x": 65,
+            "y": 22
+          }
+        ],
+        [
+          {
+            "x": 72,
+            "y": 55
+          },
+          {
+            "x": 79,
+            "y": 51
+          },
+          {
+            "x": 85,
+            "y": 56
+          },
+          {
+            "x": 83,
+            "y": 62
+          },
+          {
+            "x": 75,
+            "y": 62
+          }
+        ]
+      ]
+    },
+    "boat": {
+      "position": {
+        "x": 14.222,
+        "y": 51.878
+      },
+      "heading": "W",
+      "hull": 2,
+      "maxHull": 3,
+      "beaconsLeft": 1,
+      "cargo": [
+        {
+          "species": "silver-bell",
+          "value": 12
+        },
+        {
+          "species": "reefback",
+          "value": 22
+        }
+      ]
+    },
+    "remaining": 25,
+    "contacts": [
+      {
+        "id": "echo-19-0",
+        "tick": 19,
+        "position": {
+          "x": 27.823,
+          "y": 51.629
+        },
+        "uncertainty": 9.8,
+        "hint": "fish-school"
+      },
+      {
+        "id": "echo-19-1",
+        "tick": 19,
+        "position": {
+          "x": 28.562,
+          "y": 46.616
+        },
+        "uncertainty": 12,
+        "hint": "large-anomaly"
+      }
+    ],
+    "beacons": [
+      {
+        "id": "beacon-1",
+        "position": {
+          "x": 21.05,
+          "y": 49.05
+        },
+        "profile": "chime",
+        "startsIn": 0,
+        "life": 2,
+        "active": true
+      }
+    ],
+    "fishing": null,
+    "threat": null,
+    "warning": {
+      "bearing": "NE",
+      "urgency": "near"
+    },
+    "events": [
+      {
+        "kind": "terminal",
+        "text": "任务完成。渔获已入港。"
+      }
+    ],
+    "legalActions": [],
+    "outcome": {
+      "terminal": true,
+      "reason": "returned",
+      "returned": true,
+      "success": true,
+      "delivered": [
+        {
+          "species": "silver-bell",
+          "value": 12
+        },
+        {
+          "species": "reefback",
+          "value": 22
+        }
+      ],
+      "score": 74
+    }
+  },
+  "result": {
+    "player": "baseline",
+    "scenario": "C",
+    "seed": 303,
+    "caseId": "dev-c",
+    "repetition": 1,
+    "live": false,
+    "outcome": {
+      "terminal": true,
+      "reason": "returned",
+      "returned": true,
+      "success": true,
+      "delivered": [
+        {
+          "species": "silver-bell",
+          "value": 12
+        },
+        {
+          "species": "reefback",
+          "value": 22
+        }
+      ],
+      "score": 74
+    },
+    "steps": 29,
+    "invalidActions": 0,
+    "calls": 0,
+    "failedCalls": 0,
+    "fallbacks": 0,
+    "latencyMs": 0,
+    "inputTokens": null,
+    "outputTokens": null,
+    "estimatedCost": null,
+    "deliveredValue": 34,
+    "hull": 2,
+    "runnerStop": null,
+    "model": null,
+    "promptVersion": "echo-public-player-1",
+    "gameVersion": "4a3b5b94442d95caa54d4445c231cd87f456bd9e+dirty"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "recorded-model-demo",
+  "seed": 101,
+  "scenario": "A",
+  "actions": [
+    "ping:weak",
+    "move:E:quiet",
+    "move:E:quiet",
+    "cast:E",
+    "reel:strong",
+    "reel:strong",
+    "reel:strong",
+    "ping:weak",
+    "move:E:quiet",
+    "cast:E",
+    "reel:strong",
+    "reel:strong",
+    "reel:strong",
+    "move:W:rush",
+    "return"
+  ],
+  "model": "gpt-6.1-sol",
+  "calls": 15,
+  "inputTokens": 19167,
+  "outputTokens": 481,
+  "fallbacks": 0,
+  "outcome": {
+    "terminal": true,
+    "reason": "returned",
+    "returned": true,
+    "success": true,
+    "delivered": [
+      {
+        "species": "silver-bell",
+        "value": 12
+      },
+      {
+        "species": "silver-bell",
+        "value": 12
+      }
+    ],
+    "score": 64
+  },
+  "sourceLabel": "EasyCLIProxyAPI · gpt-6.1-sol · recorded development live episode",
+  "recordedAt": "2026-10-23T03:18:08.561Z",
+  "latencyMs": 58005.34650000001,
+  "tokens": 19648
+}
